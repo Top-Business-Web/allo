@@ -48,8 +48,8 @@
                                         <b> {{ trans('site.recycling') }} </b> {{ trans('site.organization_to_create_best') }}
                                         <b> {{ trans('site.environment') }} </b></h5>
                                     {{--                                    aya--}}
-                                    <button class="main-btn bg-brown mt-3" type="button" data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal">{{ trans('site.liceneses') }}</button>
+                                    <!-- <button class="main-btn bg-brown mt-3" type="button" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">{{ trans('site.liceneses') }}</button> -->
                                 </div>
                             </div>
                         </div>
@@ -89,11 +89,12 @@
                                             {{ trans('site.enviro_group_aims') }}
                                         </p>
 
-                                        <button
+                                        <!-- <button
                                                 class="main-btn bg-brown mb-3"
-                                                onclick="profDownload('{{ asset($setting->profile) }}', 'profile Company')">{{ trans('site.Profile_company') }}</button>
+                                                onclick="profDownload('{{ asset($setting->profile) }}', 'profile Company')">{{ trans('site.Profile_company') }}
+                                            </button> -->
 
-                                        <div class="row mt-20">
+                                        <!-- <div class="row mt-20">
                                             <div class="col-lg-4 col-md-4 col-12">
                                                 <div class="featured-area">
                                                     <div class="featured-icon">
@@ -132,7 +133,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -183,12 +184,12 @@
                             </h4>
                             <hr>
                             <p>{{ app()->getLocale() == 'ar' ? $service->desc_ar : $service->desc_en }}</p>
-                            <ul class="list-unstyled service-list">
+                            <!-- <ul class="list-unstyled service-list">
                                 <li><i class="fas fa-check"></i>{{ trans('site.collect_separate_materials')}}</li>
                                 <li><i class="fas fa-check"></i>{{ trans('site.reduce_recycling_into_raw_material') }}
                                 </li>
                                 <li><i class="fas fa-check"></i>{{ trans('site.turn_raw_material_into_product') }}</li>
-                            </ul>
+                            </ul> -->
                             <a class="main-btn primary"
                                href="{{ route('service') }}">{{ trans('site.find_out_more') }}</a>
                         </div>
@@ -202,7 +203,7 @@
 
     <div class="process-area dark-bg section-padding">
         <div class="container">
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-12 col-lg-6">
                     <div class="section-title">
                         <h6>{{ trans('site.recycling_wastage_save_environment') }}</h6>
@@ -221,7 +222,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
 
             <div class="process-item-wrap">
@@ -281,7 +282,7 @@
 
     <!-- Choose Us Area  -->
 
-    <div class="why-choose-two section-padding">
+    <!-- <div class="why-choose-two section-padding">
         <div class="container">
             <div class="section-title text-center">
                 <h6>{{ trans('site.our_pontential_benefits') }}</h6>
@@ -291,11 +292,11 @@
                 <img src="{{ asset('assets/front/') }}/assets/img/img-all-egypt.jpg">
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Contact Section  -->
 
-    <div class="contact-area section-padding">
+    <!-- <div class="contact-area section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-xl-5 col-lg-6">
@@ -389,11 +390,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- product Section  -->
 
-    <div class="project-area gray-bg section-padding">
+    <div class="project-area section-padding">
         <div class="container">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-7">
@@ -425,7 +426,7 @@
 
     {{--    aya modal --}}
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="d-flex justify-content-end pt-2 pe-2">
@@ -436,7 +437,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Footer Area -->
 
