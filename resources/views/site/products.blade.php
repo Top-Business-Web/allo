@@ -26,13 +26,15 @@
     <div class="project-area gray-bg section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-8">
+                <div class="col-12">
                     <div class="row productSearch">
                         @foreach($data['products'] as $product)
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="project-single">
                                     <div class="project-img">
+                                    <a href="{{ route('singleProduct', $product->id) }}" class="w-100">
                                         <img src="{{ asset($product->images[0]) }}" alt="">
+                                    </a>
                                     </div>
                                     <div class="project-content">
                                         <div class="project-title text-center">
@@ -45,7 +47,7 @@
                         @endforeach
                     </div>
                 </div>
-                <div class="col-12 col-lg-4">
+                <!-- <div class="col-12 col-lg-4">
                     <div class="sidebar">
                         <div class="sidebar_single sidebar_search">
                             <form action="#" class="sidebar_search-form">
@@ -108,7 +110,7 @@
                         </ul>
                     </div>
 
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

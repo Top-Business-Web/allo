@@ -409,7 +409,9 @@
                     @foreach($data['products'] as $product)
                         <div class="project-single ms-2 me-2">
                             <div class="project-img">
+                            <a href="{{ route('singleProduct', $product->id) }}" class="w-100">
                                 <img src="{{ asset($product->images[0]) }}" alt="">
+                            </a>
                             </div>
                             <div class="project-content">
                                 <div class="project-title text-center">
