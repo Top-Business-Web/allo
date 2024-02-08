@@ -80,7 +80,7 @@
                             <h3 class="service-details_title">{{ app()->getLocale() == 'ar' ? $data['single_service']->title_ar : $data['single_service']->title_en }}</h3>
                             <p class="service-details_text-1">{{ app()->getLocale() == 'ar' ? $data['single_service']->desc_ar : $data['single_service']->desc_en }} </p>
                         </div>
-                        <ul class="service-details_two-icons list-unstyled">
+                        <!-- <ul class="service-details_two-icons list-unstyled">
                             <li class="service-details_two-icon-single">
                                 <div class="service-details_two-icon">
 								<span class="service-icon">
@@ -108,7 +108,7 @@
                                 <img src="assets/img/icon/recycling.png" style="width: 70px;" alt="">
                             </div>
                             <p class="service-details_bottom-text">{{ trans('site.recycling_is') }}</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
