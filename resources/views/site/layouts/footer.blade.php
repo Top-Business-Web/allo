@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="logo">
-                        <img src="{{ asset($setting->logo) }}" alt="no-logo"/>
+                        <img src="{{ asset('assets/front') }}/assets/img/white png logo.png" alt="no-logo"/>
                     </div>
                     <div class="contact-info">
                         <p><b>{{ trans('site.location') }}
