@@ -10,7 +10,7 @@ a:hover{
     color: #DFB163;
 }
 .header_top_right .social-area a{
-    background-color: #c93831;
+    background-color: #93b74e;
     color: white;
     border-radius: 50%;
     width: 20px;
@@ -24,15 +24,15 @@ a:hover{
 .featured-icon svg{
     font-size: 35px;
     font-weight: 300;
-    color: #c93831;
+    color: #93b74e;
 }
 ul.service-list li svg {
-    background: #c93831;
+    background: #93b74e;
     color: #fff;
     border-radius: 50%;
     padding: 4px;
     margin-right: 10px;
-    background: #c93831;
+    background: #93b74e;
     color: #fff;
     border-radius: 50%;
     padding: 4px;
@@ -45,13 +45,13 @@ ul.service-list li svg {
 .project-more svg{
     font-size: 30px;
     font-weight: 500;
-    color: #c93831;
+    color: #93b74e;
     margin-left: 13px;
 }
 ul.contact-list li svg{
     font-size: 14px;
     font-weight: 600;
-    background: #c93831;
+    background: #93b74e;
     color: #fff;
     border-radius: 50%;
     padding: 4px;
@@ -75,13 +75,13 @@ ul.contact-list li svg{
   }
   .project-solutions-list svg{
     padding-right: 15px;
-    color: #c93831;
+    color: #93b74e;
   }
   .bg-brown{
     margin-top: 0 !important;
-    background-color: #c93831;
+    background-color: #93b74e;
     color: white !important;
-    border-color: #c93831;
+    border-color: #93b74e;
   }
   .bg-brown:hover{
     background-color: #7d1916;
@@ -186,7 +186,7 @@ ul.contact-list li svg{
     font-size: 13px;
     padding: 1px 7px;
     color: white;
-    background-color: #c93831;
+    background-color: #93b74e;
     border-radius: 50%;
     -webkit-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
@@ -237,11 +237,11 @@ ul.contact-list li svg{
   }
 }
 .tabs-list li:hover{
-  color: #c93831;
+  color: #93b74e;
 }
 .tabs-list .show{
-  color: #c93831;
-  border-bottom: 2px solid #c93831;
+  color: #93b74e;
+  border-bottom: 2px solid #93b74e;
 }
 .content-list > div:not(:first-child){
   display: none;
@@ -277,7 +277,7 @@ form svg{
   /* font-size: 30px; */
 }
 section .row1{
-  background-color: #c93831;
+  background-color: #93b74e;
   margin: 10px 0;
   list-style: none;
   padding: 15px 20px;
@@ -350,12 +350,12 @@ section .details span{
 }
 
 input:focus{
-  border-color: #c93831;
+  border-color: #93b74e;
 }
 
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
-  background-color: #c93831 !important;
+  background-color: #93b74e !important;
 }
 
 .owl-carousel .owl-dots.disabled{

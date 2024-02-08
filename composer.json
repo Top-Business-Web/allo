@@ -11,9 +11,6 @@
         "beyondcode/laravel-websockets": "^1.13",
         "buglinjo/laravel-webp": "^2.3",
         "convertio/convertio-php": "^0.4.0",
-        "facebook/graph-sdk": "^5.7",
-        "facebook/php-business-sdk": "^14.0",
-        "facebook/php-sdk-v4": "^5.7",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.75",
@@ -21,7 +18,6 @@
         "laravel/socialite": "^5.5",
         "laravel/tinker": "^2.5",
         "mcamara/laravel-localization": "^1.7",
-        "pusher/pusher-php-server": "~3.0",
         "tymon/jwt-auth": "^1.0",
         "yajra/laravel-datatables": "^1.5",
         "yoeunes/toastr": "^1.2"
