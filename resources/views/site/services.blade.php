@@ -38,7 +38,9 @@
                         <div class="services-two_single">
                             <div class="services-two_img-box">
                                 <div class="services-two_img">
+                                <a href="{{ route('singleService', $service->id) }}" class="w-100">
                                     <img src="{{ asset($service->images[0]) }}" alt="">
+                                </a>
                                 </div>
                                 <div class="services-two_icon">
                                     <img src="{{ asset($service->image_logo) }}" alt="">
@@ -65,7 +67,7 @@
 
     <!-- Process Section  -->
 
-    <div class="process-area dark-bg section-padding">
+    <!-- <div class="process-area dark-bg section-padding">
         <div class="container">
             <div class="process-item-wrap">
                 <div class="col-lg-4 col-12">
@@ -118,7 +120,7 @@
 
             </div>
         </div>
-    </div>
+    </div> -->
 
 @endsection
 

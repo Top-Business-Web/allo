@@ -44,10 +44,10 @@
                                             {{ trans('site.enviro_group_aims') }}
                                         </p>
 
-                                        <button class="main-btn bg-brown mb-3" onclick="profDownload()">
+                                        <!-- <button class="main-btn bg-brown mb-3" onclick="profDownload()">
                                             {{ trans('site.Profile_company') }}
-                                        </button>
-                                        <div class="row mt-20">
+                                        </button> -->
+                                        <!-- <div class="row mt-20">
                                             <div class="col-lg-4 col-md-4 col-12">
                                                 <div class="featured-area">
                                                     <div class="featured-icon">
@@ -84,7 +84,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -130,7 +130,7 @@
                     </div>
                 </div>
                 <div class="col-xl-6">
-                    <div class="why-choose-two_right">
+                    <div class="why-choose-two_right mb-5 pb-5">
                         <div class="section-title text-left">
                             <h6>{{ trans('site.our_pontential_benefits') }}</h6>
                             <h2>{{ trans('site.why_you_should_choose_our_services') }}</h2>
@@ -141,7 +141,7 @@
                         <p class="why-choose-two_right-text">
                             {{ trans('site.in_2022_enviro_group_starts') }}
                         </p>
-                        <ul class="list-unstyled why-choose-two_points">
+                        <!-- <ul class="list-unstyled why-choose-two_points">
                             <li>
                                 <div class="icon">
                                     <i class="fas fa-check"></i>
@@ -158,7 +158,7 @@
                                     <p>{{ trans('site.reducing_waste') }}</p>
                                 </div>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
             </div>
@@ -166,7 +166,7 @@
     </div>
 
     <!-- CTA -->
-    <div class="cta-area-2 mt-100 dark-bg">
+    <!-- <div class="cta-area-2 mt-100 dark-bg">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5 col-12">
@@ -180,7 +180,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <script>
         function profDownload(){
