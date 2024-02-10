@@ -26,6 +26,8 @@ return [
     'our_values' => 'Our Values',
     'our_vision' => 'Our vision',
     'our_mission' => 'Our mission',
+
+    'divisions' => 'Divisions',
     'enviro_group_for_services_and_waste_management' => 'IECO',
 
     #### NavBar
@@ -129,7 +131,7 @@ return [
     'color' => 'Color',
     'water_resistant' => 'Water Resistant',
     'material' => 'Material',
-    'related_products' => 'Related products',
+    'related_projects' => 'Related Projects',
     'search here' => 'search here',
     'all' => 'All',
 
