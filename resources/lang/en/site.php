@@ -133,6 +133,9 @@ return [
     'related_projects' => 'Related Projects',
     'search here' => 'search here',
     'all' => 'All',
+    'age' => 'Age',
+    'job' => 'Job',
+    'desc' => 'Description',
 
     #### career
     'join_us' => 'JOIN US',
