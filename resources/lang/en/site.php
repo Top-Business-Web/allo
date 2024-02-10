@@ -26,7 +26,7 @@ return [
     'our_values' => 'Our Values',
     'our_vision' => 'Our vision',
     'our_mission' => 'Our mission',
-    'enviro_group_for_services_and_waste_management' => 'Enviro Group for services and waste management',
+    'enviro_group_for_services_and_waste_management' => 'IECO',
 
     #### NavBar
     'home' => 'Home',

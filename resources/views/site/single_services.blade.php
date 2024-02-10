@@ -56,11 +56,11 @@
                     <div class="service-details_right">
 
                         <section id="main-carousel" class="splide" aria-label="My Awesome Gallery">
-                            <div class="splide__track">
+                            <div class="splide__track" style="height:500px !important;">
                                 <ul class="splide__list">
                                     @foreach($data['single_service']->images as $image)
                                         <li class="splide__slide">
-                                            <img src="{{ asset($image) }}" alt="">
+                                            <img src="{{ asset($image) }}" alt="no-image" style="height:500px !important;">
                                         </li>
                                     @endforeach
                                 </ul>
