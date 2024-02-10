@@ -27,6 +27,7 @@
                                     <a href="{{ route('about') }}">{{ trans('site.about_us') }}</a>
                                     <a href="{{ route('projects') }}">{{ trans('site.our_projects') }}</a>
                                     <a href="{{ route('contact') }}">{{ trans('site.contact') }}</a>
+                                    <a href="{{ route('faqs') }}">{{ trans('site.faqs') }}</a>
                                 </li>
                             </ul>
                         </div>
