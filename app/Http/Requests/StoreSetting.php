@@ -25,10 +25,10 @@ class StoreSetting extends FormRequest
     public function rules()
     {
         return [
-            'title_ar' => 'required',
-            'title_en' => 'required',
-            'desc_ar' => 'required',
-            'desc_en' => 'required',
+            // 'title_ar' => 'required',
+            // 'title_en' => 'required',
+            // 'desc_ar' => 'required',
+            // 'desc_en' => 'required',
             'logo' => 'image:png|nullable',
             'location_url' => 'required',
             'address_ar' => 'required',
@@ -49,10 +49,10 @@ class StoreSetting extends FormRequest
     public function messages()
     {
         return [
-            'title_ar.required' => 'العنوان بالعربي مطلوب',
-            'title_en.required' => 'العنوان بالانجليزي مطلوب',
-            'desc_ar.required' => 'الوصف بالعربي مطلوب',
-            'desc_en.required' => 'الوصف بالانجليزي مطلوب',
+            // 'title_ar.required' => 'العنوان بالعربي مطلوب',
+            // 'title_en.required' => 'العنوان بالانجليزي مطلوب',
+            // 'desc_ar.required' => 'الوصف بالعربي مطلوب',
+            // 'desc_en.required' => 'الوصف بالانجليزي مطلوب',
             'logo.image:png' => 'يجب ان تكون لاحقة Png',
             'location_url.required' => 'الموقع مطلوب',
             'address_ar.required' => 'المكان بالعربي مطلوب',

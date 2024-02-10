@@ -27,6 +27,7 @@ return [
     'our_vision' => 'رؤيتنا',
     'our_mission' => 'مهمتنا',
     'enviro_group_for_services_and_waste_management' => 'Enviro Group للخدمات وإدارة النفايات',
+    'divisions' => 'قطاعات',
 
     #### NavBar
     'home' => 'الرئيسية',
@@ -127,7 +128,7 @@ return [
     'color' => 'لون',
     'water_resistant' => 'مضاد للماء',
     'material' => 'مادة',
-    'related_products' => 'المنتجات المتعلقة به',
+    'related_projects' => 'المنتجات المتعلقة به',
     'search here' => 'ابحث هنا',
     'all' => 'الكل',
 

@@ -30,7 +30,7 @@
                         <div class="service-details_sidebar-service">
                             <ul class="service-details_sidebar-service-list list-unstyled">
                                 @foreach ($data['services'] as $service)
-                                    <li class="d-block current"><a
+                                    <li class="d-block {{ $service->id == $data['single_service']['id'] ? 'current' : '' }}"><a
                                             href="{{ route('singleService', $service->id) }}">{{ app()->getLocale() == 'ar' ? $service->title_ar : $service->title_en }}
                                             <span> <i
                                                     class="fas fa-long-arrow-alt-right"></i></span></a></li>

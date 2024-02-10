@@ -48,10 +48,10 @@
                         <a class="navbar-brand" href="{{ route('home') }}"><img src="{{ asset($setting->logo) }}" alt=""/></a>
                     </div>
 
-                    <div class="main-menu">
+                    <div class="main-menu accordion menu" id="accordionMenu">
                         <nav class="navbar navbar-expand-lg">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            <button class="navbar-toggler btn-menu" id="toggle-btn" type="button" data-toggle="collapse"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                     aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                                 <span class="navbar-toggler-icon"></span>
@@ -73,7 +73,7 @@
                                         <a class="nav-link {{ $name_url == 'about' ? 'active' : '' }}" href="{{ route('about') }}">{{ trans('site.about_us') }}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link {{ $name_url == 'service' ? 'active' : '' }}" href="{{ route('service') }}">{{ trans('site.services') }}
+                                        <a class="nav-link {{ $name_url == 'service' ? 'active' : '' }}" href="{{ route('service') }}">{{ trans('site.divisions') }}
                                             <span class="sub-nav-toggler"> </span>
                                         </a>
                                     </li>
@@ -108,4 +108,5 @@
             </div>
         </div>
     </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </div>
