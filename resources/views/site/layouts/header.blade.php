@@ -2,23 +2,23 @@
 <div class="header-top">
     <div class="container">
         <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12">
+            <div class="col-xl-10 col-lg-8 col-md-12 col-xs-12">
                 <div class="contact-info">
                     <i class="fas fa-location-dot me-1 ms-2"></i> {{ app()->getLocale() == 'ar' ? $setting->address_ar : $setting->address_en }}
                     <i class="fas fa-envelope me-1 ms-2"></i> {{ $setting->email }}
                     <i class="fas fa-phone me-1 ms-2"></i> {{ $setting->phone }}
                 </div>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 text-end">
+            <div class="col-xl-2 col-lg-4 col-md-12 col-xs-12 text-end">
                 <div class="header_top_right">
-                    <div class="social-area">
+                    <!-- <div class="social-area">
                         <a href="{{ $setting->facebook }}"><i class="fab fa-facebook-f"></i></a>
                     </div>
                     <div class="quick_link">
                         <ul>
                             <li><a href="{{ route('faqs') }}">{{ trans('site.faqs') }}</a></li>
                         </ul>
-                    </div>
+                    </div> -->
                     <div class="lang-list">
                         <div class="dropdown">
 
