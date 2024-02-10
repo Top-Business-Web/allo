@@ -42,6 +42,9 @@ Route::group(['prefix'=>'admin','middleware'=>'auth:admin'],function (){
     #### Slider ####
     Route::resource('sliders','SliderController');
 
+    #### Partner Success ####
+    Route::resource('partners_success','PartnerSuccessController');
+
     #### Contact ####
     Route::resource('contact','ContactController')->except('store');
 
