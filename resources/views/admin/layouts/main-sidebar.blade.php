@@ -47,7 +47,7 @@
         <li class="slide">
             <a class="side-menu__item" href="{{route('product.index')}}">
                 <i class="fe fe-codepen side-menu__icon"></i>
-                <span class="side-menu__label">المنتجات</span>
+                <span class="side-menu__label">المشاريع</span>
             </a>
         </li>
 
