@@ -41,27 +41,27 @@
                         @csrf
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="form-group">
+                                <div class="comment-form_input-box form-group">
                                     <input type="text" class="form-control" placeholder="{{ trans('site.name') }}" name="name">
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-group">
+                                <div class="comment-form_input-box form-group">
                                     <input type="email" class="form-control" placeholder="{{ trans('site.email') }}" name="email">
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-group">
+                                <div class="comment-form_input-box form-group">
                                     <input type="text" class="form-control" placeholder="{{ trans('site.phone') }}" name="phone">
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-group">
+                                <div class="comment-form_input-box form-group">
                                     <input type="text" class="form-control" placeholder="{{ trans('site.subject') }}" name="subject">
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <div class="form-group">
+                                <div class="comment-form_input-box form-group">
                                     <textarea class="form-control" rows="5" name="message" placeholder="{{ trans('site.write_a_message') }}"></textarea>
                                 </div>
                             </div>
