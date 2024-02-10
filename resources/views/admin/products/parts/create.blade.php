@@ -27,7 +27,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        {{--  <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="sub_title_ar" class="form-control-label">عنوان الفرعي للمنشور بالعربي</label>
@@ -40,7 +40,7 @@
                     <input type="text" class="form-control" name="sub_title_en" id="sub_title_en">
                 </div>
             </div>
-        </div>
+        </div>  --}}
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
@@ -54,14 +54,14 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        {{--  <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
                     <label for="details" class="form-control-label">التفاصيل</label>
                     <textarea class="form-control" rows="8" name="details" id="details"></textarea>
                 </div>
             </div>
-        </div>
+        </div>  --}}
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
@@ -76,7 +76,7 @@
                 </div>
             </div>
 
-            <label class="control-label">وصف اضافي</label>
+            {{--  <label class="control-label">وصف اضافي</label>
             <div class="col-4">
                 <div class="form-group itemKeys">
                     <label class="control-label">اسم</label>
@@ -93,7 +93,7 @@
                 <div class="form-group ButtonItems">
                     <button type="button" class="btn btn-sm btn-primary MoreItem">عنصر اخر</button>
                 </div>
-            </div>
+            </div>  --}}
             <script>
                 var i =0;
                 $('.MoreItem').on('click', function () {

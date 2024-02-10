@@ -26,6 +26,7 @@ return [
     'our_values' => 'قيمنا',
     'our_vision' => 'رؤيتنا',
     'our_mission' => 'مهمتنا',
+    'divisions' => 'قطاعات',
     'enviro_group_for_services_and_waste_management' => 'IECO',
 
     #### NavBar
@@ -127,7 +128,7 @@ return [
     'color' => 'لون',
     'water_resistant' => 'مضاد للماء',
     'material' => 'مادة',
-    'related_products' => 'المنتجات المتعلقة به',
+    'related_projects' => 'المنتجات المتعلقة به',
     'search here' => 'ابحث هنا',
     'all' => 'الكل',
 

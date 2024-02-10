@@ -57,7 +57,7 @@ Route::group(
 
         #### Product ####
         Route::get('/projects', [ProductController::class, 'index'])->name('projects');
-        Route::get('/singleProduct/{id}', [ProductController::class, 'singleProduct'])->name('singleProduct');
+        Route::get('/singleProject/{id}', [ProductController::class, 'singleProduct'])->name('singleProduct');
         Route::get('/productSearch/', [ProductController::class, 'productSearch'])->name('product-search');
         Route::get('/productSort/', [ProductController::class, 'productSort'])->name('productSort');
 
@@ -66,7 +66,7 @@ Route::group(
         Route::post('/quote/store', [QuoteController::class, 'storeQuote'])->name('quote.store');
 
         ### Service ####
-        Route::get('/service', [ServiceController::class, 'index'])->name('service');
+        Route::get('/division', [ServiceController::class, 'index'])->name('service');
         Route::get('/singleService/{id}', [ServiceController::class, 'singleService'])->name('singleService');
 
         ### Partner Success ####

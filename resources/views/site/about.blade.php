@@ -31,18 +31,18 @@
                     <div class="about-content-wrap">
                         <div class="section-title">
                             <!-- <p>Complete Commercial And Residential Recycling Services!</p> -->
-                            <h2>{{ trans('site.The_pioneers') }}</h2>
+                            <h2>{{ app()->getLocale() == 'ar' ? $aboutUs->title_ar : $aboutUs->title_en }}</h2>
                         </div>
                         <div class="about-content">
                             <div class="row">
                                 <div class="col-12 col-lg-12">
                                     <div class="about-content-left">
-                                        <p class="highlight">{{ trans('site.enviro_group_is') }}
+                                        <p class="highlight">{{ app()->getLocale() == 'ar' ? $aboutUs->desc_ar : $aboutUs->desc_en }}
                                         </p>
 
-                                        <p>
+                                        {{--  <p>
                                             {{ trans('site.enviro_group_aims') }}
-                                        </p>
+                                        </p>  --}}
 
                                         <!-- <button class="main-btn bg-brown mb-3" onclick="profDownload()">
                                             {{ trans('site.Profile_company') }}
@@ -133,14 +133,14 @@
                     <div class="why-choose-two_right mb-5 pb-5">
                         <div class="section-title text-left">
                             <h6>{{ trans('site.our_pontential_benefits') }}</h6>
-                            <h2>{{ trans('site.why_you_should_choose_our_services') }}</h2>
+                            <h2>{{ app()->getLocale() == 'ar' ? $aboutUs->top_title_ar : $aboutUs->top_title_en }}</h2>
                         </div>
                         <p class="highlight">
-                            {{ trans('site.enviro_group_for_environmental') }}
+                            {{ app()->getLocale() == 'ar' ? $aboutUs->top_desc_ar : $aboutUs->top_desc_en }}
                         </p>
-                        <p class="why-choose-two_right-text">
+                        {{--  <p class="why-choose-two_right-text">
                             {{ trans('site.in_2022_enviro_group_starts') }}
-                        </p>
+                        </p>  --}}
                         <!-- <ul class="list-unstyled why-choose-two_points">
                             <li>
                                 <div class="icon">

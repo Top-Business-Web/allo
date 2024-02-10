@@ -13,8 +13,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcroumb-title text-center">
-                        <h1>{{ trans('site.products') }}</h1>
-                        <h6><a href="{{ route('home') }}">{{ trans('site.home') }}</a> / {{ trans('site.products') }}</h6>
+                        <h1>{{ trans('site.projects') }}</h1>
+                        <h6><a href="{{ route('home') }}">{{ trans('site.home') }}</a> / {{ trans('site.projects') }}</h6>
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@
                         <h2>{{ app()->getLocale() == 'ar' ? $data['product']->title_ar : $data['product']->title_en }}</h2>
                     </div>
                     <p class="mt-3">
-                        {{ app()->getLocale() == 'ar' ? $data['product']->sub_title_ar : $data['product']->sub_title_en }}
+                        {{ app()->getLocale() == 'ar' ? $data['product']->desc_ar : $data['product']->desc_en }}
                     </p>
                     <div class="mb-4 mt-2">
                         <span class="fw-bold me-2" style="color: #016A41;">{{ trans('site.category') }} :</span><span
@@ -72,7 +72,7 @@
 
         <!-- description -->
 
-        <div class="container mb-5 mt-5">
+        {{--  <div class="container mb-5 mt-5">
             <div class="tabs border-bottom border-3">
                 <ul class="tabs-list">
                     <li class="show" data-content=".content-one">{{ trans('site.description') }}</li>
@@ -101,11 +101,11 @@
 
                 </div>
             </div>
-        </div>
+        </div>  --}}
 
-        <div class="container">
+        {{--  <div class="container">
             <div class="title mt-3 mb-4">
-                <h2>{{ trans('site.related_products') }}</h2>
+                <h2>{{ trans('site.related_projects') }}</h2>
             </div>
             <div class="row">
                 @foreach ($data['related'] as $related)
@@ -124,7 +124,7 @@
                     </div>
                 @endforeach
             </div>
-        </div>
+        </div>  --}}
     </div>
 
 @endsection

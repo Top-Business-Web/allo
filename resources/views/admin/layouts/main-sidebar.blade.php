@@ -80,12 +80,12 @@
             </a>
         </li>
 
-        <li class="slide">
+        {{--  <li class="slide">
             <a class="side-menu__item" href="{{route('post.index')}}">
                 <i class="fa fa-blog side-menu__icon"></i>
                 <span class="side-menu__label">المنشورات</span>
             </a>
-        </li>
+        </li>  --}}
 
         <li class="slide">
             <a class="side-menu__item" href="{{route('contact.index')}}">

@@ -32,7 +32,7 @@
                     </div>
                     <h1 class="card-title">قائمة  الاعدادات العامة : </h1>
                     <div class="row">
-                        <div class="col-md-3">
+                        {{--  <div class="col-md-3">
                             <div class="form-group">
                                 <label for="facebook_link">العنوان بالعربي :</label>
                                 <input type="text" name="title_ar" value="{{ $settings->title_ar }}"
@@ -45,15 +45,15 @@
                                 <input type="text" name="title_en" value="{{ $settings->title_en }}" value=""
                                        class="form-control"/>
                             </div>
-                        </div>
-                        <div class="col-md-3">
+                        </div>  --}}
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="address_ar">المكان بالعربي :</label>
                                 <input type="text" name="address_ar" value="{{ $settings->address_ar }}" value=""
                                        class="form-control"/>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="address_en">المكان بالانجليزي :</label>
                                 <input type="text" name="address_en" value="{{ $settings->address_en }}" value=""
@@ -148,7 +148,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    {{--  <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="desc_ar">الوصف بالعربي :</label>
@@ -161,7 +161,7 @@
                                 <textarea name="desc_en" rows="8" class="form-control">{{ $settings->desc_en }}</textarea>
                             </div>
                         </div>
-                    </div>
+                    </div>  --}}
                     <div>
                         <button type="submit" class="btn btn-primary" id="updateButton">تحديث</button>
                     </div>
