@@ -34,7 +34,7 @@
                 <div class="d-flex justify-content-center align-items-center mt-5">
                     <div class="information-cv d-flex justify-content-center align-items-center flex-column">
 
-                        <input type="file" class="dropify drag-file" name="file">
+                        <input type="file" class="dropify drag-file" accept="application/pdf" name="file">
                         <section class="uploaded-area"></section>
                         <div class="row form-contact mt-5">
                             <div class="col-md-6 col-sm-12 mb-4">
