@@ -26,8 +26,8 @@ return [
     'our_values' => 'قيمنا',
     'our_vision' => 'رؤيتنا',
     'our_mission' => 'مهمتنا',
-    'enviro_group_for_services_and_waste_management' => 'Enviro Group للخدمات وإدارة النفايات',
     'divisions' => 'قطاعات',
+    'enviro_group_for_services_and_waste_management' => 'IECO',
 
     #### NavBar
     'home' => 'الرئيسية',
