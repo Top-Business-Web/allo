@@ -6157,9 +6157,11 @@ label.form-label {
 }
 .partner-area .card-image .img-partner{
     transition: all 0.5s ease;
+    border-radius: 10px;
+    filter: grayscale(100%);
 }
 .partner-area .card-image:hover .img-partner{
-    transform: scale(1.1);
+    filter: grayscale(0%);
 }
 .image-footer img{
     height: 240px;
