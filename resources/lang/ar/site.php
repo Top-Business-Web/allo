@@ -131,6 +131,9 @@ return [
     'related_projects' => 'المنتجات المتعلقة به',
     'search here' => 'ابحث هنا',
     'all' => 'الكل',
+    'age' => 'السن',
+    'job' => 'وظيفة',
+    'desc' => 'الوصف',
 
 
     #### career
