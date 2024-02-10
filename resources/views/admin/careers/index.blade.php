@@ -22,8 +22,11 @@
                                 <th>ملف</th>
                                 <th>الاسم</th>
                                 <th>الايميل</th>
+                                <th>السن</th>
                                 <th>هاتف</th>
+                                <th>الوظيفة</th>
                                 <th>مرتب</th>
+                                <th>الوصف</th>
                                 <th class="rounded-end">العمليات</th>
                             </tr>
                             </thead>
@@ -70,8 +73,11 @@
             {data: 'file', name: 'file'},
             {data: 'name', name: 'name'},
             {data: 'email', name: 'email'},
+            {data: 'age', name: 'age'},
             {data: 'phone', name: 'phone'},
+            {data: 'job', name: 'job'},
             {data: 'salary', name: 'salary'},
+            {data: 'desc', name: 'desc'},
             {data: 'action', name: 'action', orderable: false, searchable: false},
         ]
         showData('{{route('careers.index')}}', columns);
