@@ -32,7 +32,7 @@ return [
     'home' => 'Home',
     'about_us' => 'About Us',
     'services' => 'Services',
-    'products' => 'Products',
+    'projects' => 'Projects',
     'career' => 'Career',
     'news' => 'News',
     'contact' => 'Contact',
@@ -82,14 +82,14 @@ return [
     'email' => 'Email',
     'submit_request' => 'Submit Request',
     'innovation_quality_and_continuous_improvement' => 'Innovation, Quality And Continuous Improvement',
-    'latest_products' => 'Latest products',
+    'latest_projects' => 'Latest Projects',
     'plastic_recycling_services' => 'Plastic Recycling Services',
     'our_core_values' => 'Our core values',
 
     #### Footer
     'location' => 'Location',
     'opening_hour' => 'Opening Hour',
-    'our_product' => 'Our Product',
+    'our_projects' => 'Our Projects',
     'news_letter' => 'Newsletter',
     'company' => 'Company',
     'Stay_tuned_for_our_latest_news' => 'Stay tuned for our latest news',
@@ -167,5 +167,9 @@ return [
     #### Blog
     'blog' => 'Blog',
     'latest_post' => 'Latest Post',
+
+    #### Partner Success
+    'partner_success' => 'Partner Success',
+    'partner_head' => 'We provide distinguished and unique services in the field of construction using advanced technologies'
 
 ];

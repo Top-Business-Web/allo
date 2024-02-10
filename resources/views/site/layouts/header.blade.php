@@ -62,32 +62,39 @@
                                  id="navbarSupportedContent">
                                 <ul class="navbar-nav m-auto">
                                     <li class="nav-item">
-                                        <a class="nav-link active" href="{{ route('home') }}">{{ trans('site.home') }}
+                                        @php
+                                            $name_url = Request::segment(2);
+                                        @endphp
+                                        <a class="nav-link {{ $name_url == '' ? 'active' : '' }}" href="{{ route('home') }}">{{ trans('site.home') }}
                                             <span class="sub-nav-toggler"> </span>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ route('about') }}">{{ trans('site.about_us') }}</a>
+                                        <a class="nav-link {{ $name_url == 'about' ? 'active' : '' }}" href="{{ route('about') }}">{{ trans('site.about_us') }}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ route('service') }}">{{ trans('site.services') }}
+                                        <a class="nav-link {{ $name_url == 'service' ? 'active' : '' }}" href="{{ route('service') }}">{{ trans('site.services') }}
                                             <span class="sub-nav-toggler"> </span>
                                         </a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ route('product') }}">{{ trans('site.products') }}
+                                        <a class="nav-link {{ $name_url == 'projects' ? 'active' : '' }}" href="{{ route('projects') }}">{{ trans('site.projects') }}
                                             <!-- <span class="sub-nav-toggler"> </span> -->
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ route('career') }}">{{ trans('site.career') }}</a>
+                                        <a class="nav-link {{ $name_url == 'partner-success' ? 'active' : '' }}"
+                                            href="{{ route('partnerSuccess') }}">{{ trans('site.partner_success') }}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ route('blog') }}">{{ trans('site.news') }}</a>
+                                        <a class="nav-link {{ $name_url == 'career' ? 'active' : '' }}" href="{{ route('career') }}">{{ trans('site.career') }}</a>
                                     </li>
+                                    {{-- <li class="nav-item">
+                                        <a class="nav-link {{ $name_url == 'blog' ? 'active' : '' }}" href="{{ route('blog') }}">{{ trans('site.news') }}</a>
+                                    </li> --}}
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ route('contact') }}">{{ trans('site.contact') }}</a>
+                                        <a class="nav-link {{ $name_url == 'contact' ? 'active' : '' }}" href="{{ route('contact') }}">{{ trans('site.contact') }}</a>
                                     </li>
                                 </ul>
                             </div>

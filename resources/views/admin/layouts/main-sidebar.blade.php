@@ -51,6 +51,13 @@
             </a>
         </li>
 
+        <li class="slide">
+            <a class="side-menu__item" href="{{route('partners_success.index')}}">
+                <i class="fa fa-newspaper side-menu__icon"></i>
+                <span class="side-menu__label">شركاء النجاح</span>
+            </a>
+        </li>
+
 
         <li class="slide">
             <a class="side-menu__item" href="{{route('services.index')}}">
