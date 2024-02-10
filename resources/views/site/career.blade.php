@@ -46,12 +46,23 @@
                                        placeholder=" {{ trans('site.email') }}" required>
                             </div>
                             <div class="col-md-6 col-sm-12 mb-4">
+                                <input type="number" class="w-100 p-3" name="age"
+                                       placeholder=" {{ trans('site.age') }}" required>
+                            </div>
+                            <div class="col-md-6 col-sm-12 mb-4">
+                                <input type="text" class="w-100 p-3" name="job"
+                                       placeholder=" {{ trans('site.job') }}" required>
+                            </div>
+                            <div class="col-md-6 col-sm-12 mb-4">
                                 <input type="text" class="w-100 p-3" name="phone"
                                        placeholder=" {{ trans('site.phone') }}" required>
                             </div>
                             <div class="col-md-6 col-sm-12 mb-4">
                                 <input type="number" class="w-100 p-3" name="salary"
                                        placeholder=" {{ trans('site.salary') }}" required>
+                            </div>
+                            <div class="col-md-12 col-sm-12 mb-4">
+                                <textarea class="w-100 p-3" rows="10" placeholder=" {{ trans('site.desc') }}" name="desc"></textarea>
                             </div>
                             <div class="col-12 mt-2 d-flex justify-content-center">
                                 <button type="submit" class="main-btn primary mt-2" id="career-btn"

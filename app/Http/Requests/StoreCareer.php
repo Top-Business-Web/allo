@@ -28,7 +28,10 @@ class StoreCareer extends FormRequest
             'name' => 'required',
             'email' => 'required|email',
             'phone' => 'required|min:11',
+            'age' => 'required',
+            'job' => 'required',
             'salary' => 'required',
+            'desc' => 'required',
 
         ];
     }
@@ -41,6 +44,9 @@ class StoreCareer extends FormRequest
             'email.email' => 'يجب ان يكون ايميل صحيح',
             'phone.required' => 'الرقم مطلوب',
             'phone.min' => 'يجب ان يكون 11 رقم على الاقل',
+            'age.required' =>  'السن مطلوب',
+            'job.required' => 'الوظيفة مطلوبة',
+            'desc.required' => 'الوصف مطلوب',
             'salary.required' => 'المرتب مطلوب'
         ];
     }
