@@ -13,8 +13,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcroumb-title text-center">
-                        <h1>{{ trans('site.services') }}</h1>
-                        <h6><a href="{{ route('home') }}">{{ trans('site.home') }}</a> / {{ trans('site.services') }}
+                        <h1>{{ trans('site.divisions') }}</h1>
+                        <h6><a href="{{ route('home') }}">{{ trans('site.home') }}</a> / {{ trans('site.divisions') }}
                         </h6>
                     </div>
                 </div>
