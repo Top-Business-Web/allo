@@ -32,7 +32,7 @@ return [
     'home' => 'الرئيسية',
     'about_us' => 'معلومات عنا',
     'services' => 'خدمات',
-    'products' => 'منتجات',
+    'projects' => 'مشاريع',
     'career' => 'حياة مهنية',
     'news' => 'الاخبار',
     'contact' => 'تواصل',
@@ -82,14 +82,14 @@ return [
     'email' => 'الايميل',
     'submit_request' => 'تقديم الطلب',
     'innovation_quality_and_continuous_improvement' => 'الابتكار والجودة والتحسين المستمر',
-    'latest_products' => 'أحدث المنتجات',
+    'latest_projects' => 'أحدث المشاريع',
     'plastic_recycling_services' => 'خدمات إعادة تدوير البلاستيك',
     'our_core_values' => 'قيمنا الأساسية',
 
     #### Footer
     "location" => "الموقع" ,
      'opening_hour' => "ساعة الافتتاح" ,
-     'our_product' => 'منتجنا' ,
+     'our_projects' => 'مشاريعنا' ,
      'news_letter' => "النشرة الإخبارية",
     'company' => 'شركة',
      'Stay_tuned_for_our_latest_news' => 'ترقبوا آخر أخبارنا' ,
@@ -166,6 +166,10 @@ return [
     #### Blog
     'blog' => 'مدونة',
     'latest_post' => 'أخر المنشورات',
+
+    #### Partner Success
+    'partner_success' => 'شركاء النجاح',
+    'partner_head' => 'نقدم خدمات متميزة وفريدة من نوعها في مجال الانشاءات باستخدام التقنيات المتقدمة'
 
 
 ];

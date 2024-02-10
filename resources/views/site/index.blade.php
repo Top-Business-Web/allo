@@ -400,7 +400,7 @@
                 <div class="col-lg-7">
                     <div class="section-title">
                         <h6>{{ trans('site.innovation_quality_and_continuous_improvement') }}</h6>
-                        <h2>{{ trans('site.latest_products') }}</h2>
+                        <h2>{{ trans('site.latest_projects') }}</h2>
                     </div>
                 </div>
             </div>
