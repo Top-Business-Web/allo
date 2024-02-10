@@ -82,12 +82,12 @@
                                 <div class="col-12 col-lg-12">
                                     <div class="about-content-left">
                                         <p class="highlight">
-                                            {{ trans('site.enviro_group_is') }}
+                                            {{ app()->getLocale() == 'ar' ? $aboutUs->title_ar : $aboutUs->title_en }}
                                         </p>
 
-                                        <p>
+                                        {{--  <p>
                                             {{ trans('site.enviro_group_aims') }}
-                                        </p>
+                                        </p>  --}}
 
                                         <!-- <button
                                                 class="main-btn bg-brown mb-3"

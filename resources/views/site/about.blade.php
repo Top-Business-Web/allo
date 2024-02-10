@@ -93,7 +93,7 @@
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="about-img">
-                        <img src="{{ asset('assets/front') }}/assets/img/about/about.jpg" alt="">
+                        <img src="{{ asset($aboutUs->image) }}" alt="">
                         <div class="about-counter">
                             <div class="counter-icon">
                                 <img src="{{ asset('assets/front') }}/assets/img/icon/customer-service.png" alt="" style="width: 60px;">
