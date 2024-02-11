@@ -66,7 +66,7 @@
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <button type="submit" class="btn btn-primary">{{ trans('site.send_a_message') }}</button>
+                                <button type="submit" class="btn btn-primary mt-5">{{ trans('site.send_a_message') }}</button>
                             </div>
                         </div>
                     </form>
