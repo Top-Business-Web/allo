@@ -90,7 +90,7 @@
                                         </p>  --}}
 
                                         <!-- <button
-                                                class="main-btn bg-brown mb-3"
+                                                class="main-btn bg-brown mb-3 mt-5"
                                                 onclick="profDownload('{{ asset($setting->profile) }}', 'profile Company')">{{ trans('site.Profile_company') }}
                                             </button> -->
 
@@ -203,26 +203,29 @@
 
     <div class="process-area dark-bg section-padding">
         <div class="container">
-            <!-- <div class="row">
-                <div class="col-12 col-lg-6">
+            <div class="row">
+                <div class="col-12 col-lg-4">
                     <div class="section-title">
-                        <h6>{{ trans('site.recycling_wastage_save_environment') }}</h6>
-                        <h2 class="text-white">{{ trans('site.simple_steps_wastage') }}
-                            <br> {{ trans('site.to_recycling_item_processing') }}</h2>
+                        <!-- <h6>{{ trans('site.recycling_wastage_save_environment') }}</h6> -->
+                        <h2 class="text-white">{{ trans('site.simple_steps_wastage') }}</h2>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-8">
                     <div class="process-right-content">
-                        <p class="text-white">{{ trans('site.recycling_is_the_process_of_converting') }}</p>
-                        <p class="text-white">{{ trans('site.this_waste_management_video') }}</p>
+                        <!-- <p class="text-white">{{ trans('site.recycling_is_the_process_of_converting') }}</p>
+                        <p class="text-white">{{ trans('site.this_waste_management_video') }}</p> -->
                         <div class="process-btn">
-                            <a href="{{ route('contact') }}" class="main-btn">{{ trans('site.get_started') }}</a>
-                            <a href="{{ route('service') }}"
-                               class="main-btn white">{{ trans('site.view_our_services') }}</a>
+                            <!-- <a href="{{ route('contact') }}" class="main-btn">{{ trans('site.get_started') }}</a> -->
+
+                            <button
+                                                class="btn-certificate bg-brown mb-3 mt-5"
+                                                onclick="profDownload('{{ asset($setting->profile) }}', 'profile Company')">QHSE Policy</button>
+
+                            <a href="#" class="main-btn white">ISO Certificate - Currently under certification 9001-2008</a>
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
 
             <div class="process-item-wrap">
