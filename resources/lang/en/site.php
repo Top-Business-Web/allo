@@ -61,7 +61,7 @@ return [
     'reduce_recycling_into_raw_material' => 'Reduce & recycling into raw material.',
     'turn_raw_material_into_product' => 'Turn raw material into product',
     'recycling_wastage_save_environment' => 'Recycling Wastage Save Environment!',
-    'simple_steps_wastage' => 'Simple steps Wastage',
+    'simple_steps_wastage' => 'Certifications',
     'to_recycling_item_processing' => 'to Recycling Item Processing',
     'recycling_is_the_process_of_converting' => 'Recycling is the process of converting waste materials into new materials and objects. To do this, recycling often requires both machinery and employees to correctly sort recyclable items based on the material they’re made of. This includes paper, plastic, glass, metal, and more',
     'this_waste_management_video' => 'This Waste Management video shows the step-by-step process of how materials are processed once they reach a facility.',
