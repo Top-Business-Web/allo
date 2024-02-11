@@ -75,14 +75,14 @@
                     <div class="about-content-wrap">
                         <div class="section-title">
                             <!-- <p>Complete Commercial And Residential Recycling Services!</p> -->
-                            <h2>{{ trans('site.The_pioneers') }}</h2>
+                            <h2>{{ app()->getLocale() == 'ar' ? $aboutUs->title_ar : $aboutUs->title_en }}</h2>
                         </div>
                         <div class="about-content">
                             <div class="row">
                                 <div class="col-12 col-lg-12">
                                     <div class="about-content-left">
                                         <p class="highlight">
-                                            {{ app()->getLocale() == 'ar' ? $aboutUs->title_ar : $aboutUs->title_en }}
+                                            {{ app()->getLocale() == 'ar' ? $aboutUs->desc_ar : $aboutUs->desc_en }}
                                         </p>
 
                                         {{--  <p>
