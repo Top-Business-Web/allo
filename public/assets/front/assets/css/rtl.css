@@ -432,7 +432,7 @@ hr {
   line-height: 75px;
   letter-spacing: 1px;
   margin: 20px 0;
-  color: #3a3a3a;
+  color: #386093;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .section-title h2 {
@@ -1551,6 +1551,8 @@ p.highlight {
   color: #2b3e4b;
   font-weight: 500;
   font-size: 17px;
+  text-align: justify;
+  line-height: 1.9;
 }
 
 ul.feature-list {
@@ -2936,6 +2938,7 @@ ul.service-list li i {
 .why-choose-two_img img {
   width: 100%;
   border-radius: 12px;
+  height: 350px;
 }
 
 .why-choose-two_video-link {
@@ -3839,7 +3842,7 @@ p.privacy a:not(:last-of-type)::after {
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
   display: block;
-  background-color: #edf3f6;
+  background-color: #a3bbdc;
   padding: 20px 40px;
   margin-bottom: 10px;
 }
