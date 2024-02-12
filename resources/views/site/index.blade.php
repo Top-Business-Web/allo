@@ -218,7 +218,7 @@
                                                 class="btn-certificate bg-brown mb-3 mt-5"
                                                 onclick="profDownload('{{ asset($setting->profile) }}', 'profile Company')">QHSE Policy</button>
 
-                            <a href="#" class="main-btn white">ISO Certificate - Currently under certification 9001-2008</a>
+                            <a href="#" class="main-btn white"> ISO Certificate - Currently under certification 9001-2008</a>
                         </div>
                     </div>
                 </div>
