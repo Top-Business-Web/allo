@@ -44,10 +44,7 @@
                             </div>
                             <div class="col-lg-8 col-md-8 col-12">
                                 <div class="promo-content">
-                                    <h5> {{ trans('site.we_are_top') }}
-                                        <b> {{ trans('site.recycling') }} </b> {{ trans('site.organization_to_create_best') }}
-                                        <b> {{ trans('site.environment') }} </b></h5>
-                                    {{--                                    aya--}}
+                                    <h5> {{ trans('site.we_are_top') }}</h5>
                                     <!-- <button class="main-btn bg-brown mt-3" type="button" data-bs-toggle="modal"
                                             data-bs-target="#exampleModal">{{ trans('site.liceneses') }}</button> -->
                                 </div>

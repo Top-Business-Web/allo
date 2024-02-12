@@ -55,6 +55,11 @@
                 <div class="col-xl-8 col-lg-7">
                     <div class="service-details_right">
 
+                        <div class="service-details_content">
+                            <h3 class="service-details_title">{{ app()->getLocale() == 'ar' ? $data['single_service']->title_ar : $data['single_service']->title_en }}</h3>
+                            <p class="service-details_text-1">{{ app()->getLocale() == 'ar' ? $data['single_service']->desc_ar : $data['single_service']->desc_en }} </p>
+                        </div>
+
                         <section id="main-carousel" class="splide" aria-label="My Awesome Gallery">
                             <div class="splide__track" style="height:500px !important;">
                                 <ul class="splide__list">
@@ -76,10 +81,6 @@
                             @endforeach
                         </ul>
 
-                        <div class="service-details_content">
-                            <h3 class="service-details_title">{{ app()->getLocale() == 'ar' ? $data['single_service']->title_ar : $data['single_service']->title_en }}</h3>
-                            <p class="service-details_text-1">{{ app()->getLocale() == 'ar' ? $data['single_service']->desc_ar : $data['single_service']->desc_en }} </p>
-                        </div>
                         <!-- <ul class="service-details_two-icons list-unstyled">
                             <li class="service-details_two-icon-single">
                                 <div class="service-details_two-icon">

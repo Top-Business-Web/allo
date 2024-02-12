@@ -40,7 +40,7 @@ return [
     'contact' => 'Contact',
     'faqs' => 'Faqs',
     'get_a_quote' => 'Get a Quote',
-    'we_are_top' => 'We are Top',
+    'we_are_top' => 'IECO is an Egyptian registered company started in 2009',
     'recycling' => 'Recycling',
     'organization_to_create_best' => 'Organization To Create Best',
     'environment' => 'Environment',
