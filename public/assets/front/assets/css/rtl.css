@@ -1964,7 +1964,7 @@ p.text-black:before {
 }
 
 .services-two_icon {
-  padding: 20px;
+  padding: 10px;
   background-color: #93b74e;
   display: flex;
   align-items: center;
@@ -1977,7 +1977,7 @@ p.text-black:before {
   transition: all 500ms ease;
 }
 .services-two_icon img {
-  width: 45px;
+  width: 60px;
   height: auto;
 }
 
