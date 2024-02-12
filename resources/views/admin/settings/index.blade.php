@@ -69,21 +69,21 @@
                                        class="form-control"/>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label for=""> الايميل :</label>
                                 <input type="email" name="email" value="{{ $settings->email }}" value=""
                                        class="form-control"/>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label for=""> الهاتف :</label>
                                 <input type="text" name="phone" value="{{ $settings->phone }}" value=""
                                        class="form-control"/>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label for=""> مفتوح :</label>
                                 <input type="text" name="open" value="{{ $settings->open }}" value=""
@@ -93,35 +93,30 @@
                     </div>
                     <h1 class="card-title" style="font: bold">قائمة السوشيال ميديا : </h1>
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="facebook_link">فيسبوك :</label>
                                 <input type="url" name="facebook" value="{{ $settings->facebook }}"
                                        class="form-control"/>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="">يوتيوب :</label>
-                                <input type="url" name="youtube" value="{{ $settings->youtube }}" value=""
-                                       class="form-control"/>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="">تويتر :</label>
                                 <input type="url" name="twitter" value="{{ $settings->twitter }}" value=""
                                        class="form-control"/>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="">انستجرام :</label>
                                 <input type="url" name="instagram" value="{{ $settings->instagram }}" value=""
                                        class="form-control"/>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="form-group">
                                 <label for="">لينكد ان :</label>
                                 <input type="url" name="linkedin" value="{{ $settings->linkedin }}" value=""
@@ -130,21 +125,12 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="form-group">
-                                <label for="desc_ar">ملف الشركة</label>
+                                <label for="desc_ar">شهادة الشركة</label>
                                 <input type="file" class="dropify" name="profile"
                                        data-default-file="{{asset($setting->profile)}}"/>
                                 <span class="form-text text-danger text-center">مسموح فقط PDF</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="licenese">ترخيص الشركة</label>
-                                <input type="file" class="dropify" name="licenese"
-                                       data-default-file="{{asset($setting->licenese)}}"
-                                       accept="image/png,image/webp , image/gif, image/jpeg,image/jpg"/>
-                                <span class="form-text text-danger text-center">مسموح فقط بالصيغ التالية : png, gif, jpeg, jpg,webp</span>
                             </div>
                         </div>
                     </div>
