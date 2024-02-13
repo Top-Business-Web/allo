@@ -71,5 +71,6 @@ Route::group(
 
         ### Partner Success ####
         Route::get('/partner-success', [PartnerSuccessController::class, 'index'])->name('partnerSuccess');
+        Route::get('/gallery', [HomeController::class, 'galleryIndex'])->name('galleryIndex');
     }
 );
