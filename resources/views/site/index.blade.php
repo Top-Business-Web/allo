@@ -229,14 +229,14 @@
                 <div class="col-lg-4 col-12">
                     <div class="process-single">
                         <div class="process-icon">
-                            <img src="{{ asset('assets/front') }}/assets/img/vision.svg" alt="" style="width: 60px;">
+                            <img src="{{ asset('assets/front') }}/assets/img/icons-02.png" alt="" style="width: 60px;">
                         </div>
                         <div class="process-title">
                             <h5>{{ trans('site.our_vision') }}</h5>
                         </div>
                         <div class="process-desc">
                             <p style="text-align: justify;">
-                                {{ app()->getLocale() == 'ar' ? $aboutUs->desc_ar : $aboutUs->desc_en }}
+                                @lang('site.vision')
                             </p>
                         </div>
                     </div>
@@ -244,14 +244,14 @@
                 <div class="col-lg-4 col-12">
                     <div class="process-single two">
                         <div class="process-icon">
-                            <img src="{{ asset('assets/front') }}/assets/img/mission.svg" alt="" style="width: 60px;">
+                            <img src="{{ asset('assets/front') }}/assets/img/icons-03.png" alt="" style="width: 60px;">
                         </div>
                         <div class="process-title">
                             <h5>{{ trans('site.our_mission') }}</h5>
                         </div>
                         <div class="process-desc">
                             <p style="text-align: justify;">
-                                {{ app()->getLocale() == 'ar' ? $aboutUs->top_desc_ar : $aboutUs->top_desc_en }}
+                                @lang('site.mission')
                             </p>
                         </div>
                     </div>
@@ -259,19 +259,18 @@
                 <div class="col-lg-4 col-12">
                     <div class="process-single three">
                         <div class="process-icon">
-                            <img src="{{ asset('assets/front') }}/assets/img/process/4.png" alt="" style="width: 60px;">
+                            <img src="{{ asset('assets/front') }}/assets/img/icons-01.png" alt="" style="width: 60px;">
                         </div>
                         <div class="process-title">
                             <h5>{{ trans('site.our_values') }} </h5>
                         </div>
+                        <div class="process-desc">
+                            <p style="text-align: justify;">
+                                @lang('site.values')
+                            </p>
+                        </div>
                         <!-- <div class="process-desc text-start"> -->
-                        <ul class="list-unstyled service-list mt-0">
-                            <li><i class="fas fa-check"></i>{{ trans('site.build_relations') }}</li>
-                            <li><i class="fas fa-check"></i>{{ trans('site.Integrity') }}</li>
-                            <li><i class="fas fa-check"></i>{{ trans('site.accountabilit') }}</li>
-                            <li><i class="fas fa-check"></i>{{ trans('site.excellence') }}</li>
-                            <li><i class="fas fa-check"></i>{{ trans('site.innovation') }}</li>
-                        </ul>
+
                         <!-- </div>                         -->
                     </div>
                 </div>

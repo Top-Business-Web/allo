@@ -54,10 +54,16 @@
                 </div>
                 <div class="col-xl-8 col-lg-7">
                     <div class="service-details_right">
-
                         <div class="service-details_content">
-                            <h3 class="service-details_title">{{ app()->getLocale() == 'ar' ? $data['single_service']->title_ar : $data['single_service']->title_en }}</h3>
-                            <p class="service-details_text-1">{{ app()->getLocale() == 'ar' ? $data['single_service']->desc_ar : $data['single_service']->desc_en }} </p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                <h3 class="service-details_title">{{ app()->getLocale() == 'ar' ? $data['single_service']->title_ar : $data['single_service']->title_en }}</h3>
+                                </div>
+                                <div>
+                                <a class="main-btn" href="#">Tracktor Gallery</a>
+                                </div>
+                            </div>
+                            <p class="service-details_text-1 mb-5">{{ app()->getLocale() == 'ar' ? $data['single_service']->desc_ar : $data['single_service']->desc_en }} </p>
                         </div>
 
                         <section id="main-carousel" class="splide" aria-label="My Awesome Gallery">
