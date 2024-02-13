@@ -55,8 +55,8 @@ return [
     'ontime_at' => 'Ontime at',
     'affordable' => 'Affordable',
     'cost' => 'Cost',
-    'sustainable' => 'Sustainable, Reliable & Affordable Recycling Service!',
-    'we_provide' => 'We Provide Various Recycling Services & Waste Disposal',
+    'sustainable' => 'Service',
+    'we_provide' => 'Import and export services and commercial agencies',
     'collect_separate_materials' => 'Collect & separate materials',
     'reduce_recycling_into_raw_material' => 'Reduce & recycling into raw material.',
     'turn_raw_material_into_product' => 'Turn raw material into product',
@@ -83,7 +83,7 @@ return [
     'phone' => 'Phone',
     'email' => 'Email',
     'submit_request' => 'Submit Request',
-    'innovation_quality_and_continuous_improvement' => 'Innovation, Quality And Continuous Improvement',
+    'innovation_quality_and_continuous_improvement' => 'Projects',
     'latest_projects' => 'Latest Projects',
     'plastic_recycling_services' => 'Plastic Recycling Services',
     'our_core_values' => 'Our core values',
@@ -175,7 +175,7 @@ return [
 
     #### Partner Success
     'partner_success' => 'Partner Success',
-    'partner_head' => 'We provide distinguished and unique services in the field of construction using advanced technologies',
+    'partner_head' => 'We provide distinguished and unique services',
 
 
 

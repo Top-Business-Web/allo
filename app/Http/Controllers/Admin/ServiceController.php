@@ -20,13 +20,19 @@ class ServiceController extends Controller
             $services = Service::latest()->get();
             return Datatables::of($services)
                 ->addColumn('action', function ($services) {
-                    return '
-                                <button type="button" data-id="' . $services->id . '" class="btn btn-pill btn-info-light editBtn"><i class="fa fa-edit"></i></button>
-                                <button class="btn btn-pill btn-danger-light" data-toggle="modal" data-target="#delete_modal"
-                                        data-id="' . $services->id . '" data-title="' . $services->title_ar . '">
-                                        <i class="fas fa-trash"></i>
-                                </button>
-                           ';
+                    if ($services->id == 15) {
+                        return '
+                        <button type="button" data-id="' . $services->id . '" class="btn btn-pill btn-info-light editBtn"><i class="fa fa-edit"></i></button>
+                   ';
+                    }else {
+                        return '
+                        <button type="button" data-id="' . $services->id . '" class="btn btn-pill btn-info-light editBtn"><i class="fa fa-edit"></i></button>
+                        <button class="btn btn-pill btn-danger-light" data-toggle="modal" data-target="#delete_modal"
+                                data-id="' . $services->id . '" data-title="' . $services->title_ar . '">
+                                <i class="fas fa-trash"></i>
+                        </button>
+                   ';
+                    }
                 })
                 ->editColumn('images', function ($services) {
                     return '

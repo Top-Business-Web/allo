@@ -67,6 +67,13 @@
         </li>
 
         <li class="slide">
+            <a class="side-menu__item" href="{{route('gallery.index')}}">
+                <i class="fe fe-slack side-menu__icon"></i>
+                <span class="side-menu__label">المعرض</span>
+            </a>
+        </li>
+
+        <li class="slide">
             <a class="side-menu__item" href="{{route('about_us.index')}}">
                 <i class="fa fa-users side-menu__icon"></i>
                 <span class="side-menu__label">معلومات عنا</span>
