@@ -54,8 +54,8 @@ return [
     'ontime_at' => 'في الوقت المحدد',
     'affordable' => 'بسعر معقول',
     'cost' => 'يكلف',
-    'sustainable' => 'خدمة إعادة التدوير المستدامة والموثوقة والميسورة التكلفة!',
-    'we_provide' => 'نحن نقدم خدمات إعادة التدوير المختلفة والتخلص من النفايات',
+    'sustainable' => ' خدماتنا',
+    'we_provide' => ' خدمات الإستيراد والتصدير والتوكيلات التجارية ',
     'collect_separate_materials' => 'جمع وفصل المواد',
     'reduce_recycling_into_raw_material' => 'تقليل وإعادة التدوير إلى مواد خام.',
     'turn_raw_material_into_product' => 'تحويل المواد الخام إلى منتج',
@@ -82,7 +82,7 @@ return [
     'phone' => 'الهاتف',
     'email' => 'الايميل',
     'submit_request' => 'تقديم الطلب',
-    'innovation_quality_and_continuous_improvement' => 'الابتكار والجودة والتحسين المستمر',
+    'innovation_quality_and_continuous_improvement' => 'مشاريعنا',
     'latest_projects' => 'أحدث المشاريع',
     'plastic_recycling_services' => 'خدمات إعادة تدوير البلاستيك',
     'our_core_values' => 'قيمنا الأساسية',
@@ -173,7 +173,7 @@ return [
 
     #### Partner Success
     'partner_success' => 'شركاء النجاح',
-    'partner_head' => 'نقدم خدمات متميزة وفريدة من نوعها في مجال الانشاءات باستخدام التقنيات المتقدمة',
+    'partner_head' => 'نقدم خدمات متميزة وفريدة',
 
 
 

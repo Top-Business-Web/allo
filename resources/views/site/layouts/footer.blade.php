@@ -76,11 +76,11 @@
 
             <div class="col-lg-6 col-12 text-end">
                 <div class="social-area">
-                    <a href="{{ $setting->facebook }}"><i class="fab fa-facebook-f ms-2 me-2"></i></a>
-                    <a href="{{ $setting->youtube }}"><i class="fab fa-youtube ms-2 me-2"></i></a>
-                    <a href="{{ $setting->twitter }}"><i class="fab fa-twitter ms-2 me-2"></i></a>
-                    <a href="{{ $setting->instagram }}"><i class="fab fa-instagram ms-2 me-2"></i></a>
-                    <a href="{{ $setting->linkedin }}"><i class="fab fa-linkedin ms-2 me-2"></i></a>
+                    <a href="{{ $setting->facebook }}" target="_blank"><i class="fab fa-facebook-f ms-2 me-2"></i></a>
+                    <!-- <a href="{{ $setting->youtube }}"><i class="fab fa-youtube ms-2 me-2"></i></a> -->
+                    <a href="{{ $setting->twitter }}" target="_blank"><i class="fab fa-twitter ms-2 me-2"></i></a>
+                    <a href="{{ $setting->instagram }}" target="_blank"><i class="fab fa-instagram ms-2 me-2"></i></a>
+                    <a href="{{ $setting->linkedin }}" target="_blank"><i class="fab fa-linkedin ms-2 me-2"></i></a>
                 </div>
             </div>
         </div>

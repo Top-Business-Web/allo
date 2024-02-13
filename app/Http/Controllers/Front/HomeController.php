@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\NewsStore;
+use App\Models\Gallery;
 use App\Models\NewsLetter;
 use App\Models\Product;
 use App\Models\Slider;
@@ -33,8 +34,9 @@ class HomeController extends Controller
         }
     }
 
-    public function galleryIndex(){
-        
-        return view('site.gallery');
+    public function galleryIndex()
+    {
+        $galleries = Gallery::get();
+        return view('site.gallery',compact('galleries'));
     } // end of galleryIndex
 }
