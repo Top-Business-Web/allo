@@ -26,8 +26,8 @@ class UpdateProduct extends FormRequest
         return [
             'title_ar' => 'required',
             'title_en' => 'required',
-            'sub_title_ar' => 'required',
-            'sub_title_en' => 'required',
+            // 'sub_title_ar' => 'required',
+            // 'sub_title_en' => 'required',
             'desc_ar' => 'required',
             'desc_en' => 'required',
             'images' => 'image|nullable',
@@ -41,8 +41,8 @@ class UpdateProduct extends FormRequest
         return [
             'title_ar.required' => 'عنوان المنتج بالعربي مطلوب',
             'title_en.required' => 'عنوان المنتج بالانجليزي مطلوب',
-            'sub_title_ar.required' => 'العنوان الفرعي بالعربي مطلوب',
-            'sub_title_en.required' => 'العنوان الفرعي بالانجليزي مطلوب',
+            // 'sub_title_ar.required' => 'العنوان الفرعي بالعربي مطلوب',
+            // 'sub_title_en.required' => 'العنوان الفرعي بالانجليزي مطلوب',
             'desc_ar.required' => 'الوصف بالعربي مطلوب',
             'desc_en.required' => 'الوصف بالانجليزي مطلوب',
             'images.image' => 'يجب ان تكون صورة',

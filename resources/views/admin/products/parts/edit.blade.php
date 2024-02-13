@@ -30,20 +30,7 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="form-group">
-                <label for="sub_title_ar" class="form-control-label">عنوان الفرعي للمنشور بالعربي</label>
-                <input type="text" class="form-control" value="{{ $product->sub_title_ar }}" name="sub_title_ar" id="sub_title_ar">
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group">
-                <label for="sub_title_en" class="form-control-label">عنوان الفرعي للمنشور بالانجليزي</label>
-                <input type="text" class="form-control" value="{{ $product->sub_title_en }}" name="sub_title_en" id="sub_title_en">
-            </div>
-        </div>
-    </div>
+
     <div class="row">
         <div class="col-md-12">
             <div class="form-group">
@@ -72,39 +59,6 @@
                 <textarea class="form-control" rows="8" name="desc_en" id="desc_en">{{ $product->desc_en }}</textarea>
             </div>
         </div>
-
-        <label class="control-label">وصف اضافي</label>
-        @foreach($product->details as $detail)
-        <div class="col-4">
-            <div class="form-group itemKeys">
-                <label class="control-label">اسم</label>
-                <input type="text" name="items[{{ $loop->iteration }}][key]" value="{{ $detail['key'] }}" class="form-control InputKey">
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="form-group itemItems">
-                <label class="control-label">القيمة</label>
-                <input type="text" name="items[{{ $loop->iteration }}][value]" value="{{ $detail['value'] }}" class="form-control InputItem">
-            </div>
-        </div>
-        @endforeach
-        <div class="col-4">
-            <div class="form-group ButtonItems">
-                <button type="button" class="btn btn-sm btn-primary MoreItem">عنصر اخر</button>
-            </div>
-        </div>
-
-        <script>
-            var i ={{count($product->details)}};
-            $('.MoreItem').on('click', function () {
-                var Item = $('.InputItemExtra').last();
-                if (Item.val() !== '') {
-                    ++i;
-                    $('.itemKeys').append('<label class="control-label">اسم</label><input type="text" name="items['+i+'][key]" class="form-control InputKeyExtra">')
-                    $('.itemItems').append(' <label class="control-label">القيمة</label><input type="text" name="items['+i+'][value]" class="form-control InputItemExtra">')
-                }
-            })
-        </script>
 
     </div>
     <div class="modal-footer">
