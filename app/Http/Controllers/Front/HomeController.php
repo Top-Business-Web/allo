@@ -32,4 +32,9 @@ class HomeController extends Controller
             return response()->json(['status' => 405]);
         }
     }
+
+    public function galleryIndex(){
+        
+        return view('site.gallery');
+    } // end of galleryIndex
 }
