@@ -59,9 +59,11 @@
                                 <div>
                                 <h3 class="service-details_title">{{ app()->getLocale() == 'ar' ? $data['single_service']->title_ar : $data['single_service']->title_en }}</h3>
                                 </div>
+                                @if($data['single_service']->id == 15)
                                 <div>
-                                <a class="main-btn" href="#">Tracktor Gallery</a>
+                                    <a class="main-btn" href="{{ route('galleryIndex') }}">Tracktor Gallery</a>
                                 </div>
+                                @endif
                             </div>
                             <p class="service-details_text-1 mb-5">{{ app()->getLocale() == 'ar' ? $data['single_service']->desc_ar : $data['single_service']->desc_en }} </p>
                         </div>

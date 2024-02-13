@@ -28,7 +28,7 @@
         <div class="container">
             <div class="section-title">
                 <h6>{{ trans('site.What_we’re_doing') }}</h6>
-                <h2>{{ app()->getLocale() == 'ar' ? 'جمع ونقل المخلفات والخدمات البيئية' : 'Waste Management and environmental services' }}</h2>
+                <h2>{{ app()->getLocale() == 'ar' ? 'خدمات الإستيراد والتصدير والتوكيلات التجارية' : 'Import and export services and commercial agencies' }}</h2>
             </div>
             <div class="row">
                 @foreach ($data['services'] as $service)
