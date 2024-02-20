@@ -77,7 +77,7 @@
                             <div class="col-12 col-lg-12">
                                 <div class="about-content-left">
                                     <p class="highlight">
-                                        {{ app()->getLocale() == 'ar' ? $aboutUs->title_ar : $aboutUs->title_en }}
+                                        {{ app()->getLocale() == 'ar' ? $aboutUs->desc_ar : $aboutUs->desc_en }}
                                     </p>
 
                                     {{-- <p>
