@@ -27,20 +27,20 @@ return [
     'our_vision' => 'Our vision',
     'our_mission' => 'Our mission',
 
-    'divisions' => 'Divisions',
-    'enviro_group_for_services_and_waste_management' => 'IECO',
+    'divisions' => 'Import And Export',
+    'enviro_group_for_services_and_waste_management' => 'IGCO',
 
     #### NavBar
     'home' => 'Home',
     'about_us' => 'About Us',
     'services' => 'Services',
-    'projects' => 'Projects',
+    'projects' => 'heavy equipment and construction',
     'career' => 'Career',
     'news' => 'News',
     'contact' => 'Contact',
     'faqs' => 'Faqs',
     'get_a_quote' => 'Get a Quote',
-    'we_are_top' => 'IECO is an Egyptian registered company started in 2009',
+    'we_are_top' => 'IGCO is an Egyptian registered company started in 2009',
     'recycling' => 'Recycling',
     'organization_to_create_best' => 'Organization To Create Best',
     'environment' => 'Environment',
@@ -188,10 +188,13 @@ return [
 
 
      #### Edition en
-     'vision' => 'IECO’s vision is to be the premier provider of leasing logistics construction and life support services in the countries we operate in',
-     'mission' => 'We at IECO are committed to provide our customers with complete integrated services and flexible solutions with a total focus on time-critical delivery by expanding our resources, providing competitive pricing, skilled & experienced manpower and quality equipment & services, which will satisfy the customer standards.',
+     'vision' => 'IGCO’s vision is to be the premier provider of leasing logistics construction and life support services in the countries we operate in',
+     'mission' => 'We at IGCO are committed to provide our customers with complete integrated services and flexible solutions with a total focus on time-critical delivery by expanding our resources, providing competitive pricing, skilled & experienced manpower and quality equipment & services, which will satisfy the customer standards.',
      'values' => '	Treat our associates and employees with honesty and integrity.
      	Follow the philosophy that open communication creates trusting productive relationships, commit to sharing information timely, accurately, and completely. Listen and understand rather than argue and judge',
      'gallery' => 'Gallery',
+     'branch'=>'Branch',
+     'branch1'=>'Dubai',
+     'branch2'=>'kuwait',
 
 ];

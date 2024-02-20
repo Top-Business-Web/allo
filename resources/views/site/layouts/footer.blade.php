@@ -4,7 +4,7 @@
     <div class="container">
         <div class="footer-up">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="logo">
                         <img src="{{ asset('assets/front') }}/assets/img/white png logo.png" alt="no-logo"/>
                     </div>
@@ -17,32 +17,25 @@
                     </div>
 
                 </div>
-                <div class="col-lg-5 col-md-6 com-sm-12">
+                <div class="col-lg-3 col-md-6 com-sm-12">
+                    <h6>@lang('site.branch')</h6>
+                    <div class="contact-info">
+                        <p><b>{{ trans('site.location') }}
+                                : </b>@lang('site.branch1')</p>
+                        <p><b>{{ trans('site.phone') }}:</b> 010000000000</p>
+                        <p><b>{{ trans('site.email') }}:</b> admin@admin.com</p>
+                        <!-- <p><b>{{ trans('site.opening_hour') }}:</b> {{ $setting->open }}</p> -->
+                    </div>
+                </div>
 
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <h6>{{ trans('site.company') }}</h6>
-                            <ul>
-                                <li>
-                                    <a href="{{ route('about') }}">{{ trans('site.about_us') }}</a>
-                                    <a href="{{ route('projects') }}">{{ trans('site.our_projects') }}</a>
-                                    <a href="{{ route('contact') }}">{{ trans('site.contact') }}</a>
-                                    <a href="{{ route('faqs') }}">{{ trans('site.faqs') }}</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <h6>{{ trans('site.services') }}</h6>
-                            <ul>
-                                <?php $services = \App\Models\Service::all()->take(6)->last()->get(); ?>
-                                <li>
-                                    @foreach($services as $service)
-                                        <a href="{{ route('singleService', $service->id) }}">{{ app()->getLocale() == 'ar' ? $service->title_ar : $service->title_en }}</a>
-                                    @endforeach
-                                </li>
-                            </ul>
-                        </div>
-
+                <div class="col-lg-3 col-md-6 com-sm-12">
+                    <h6>@lang('site.branch')</h6>
+                    <div class="contact-info">
+                        <p><b>{{ trans('site.location') }}
+                                :</b> @lang('site.branch2')</p>
+                        <p><b>{{ trans('site.phone') }}:</b> 0100000000</p>
+                        <p><b>{{ trans('site.email') }}:</b> admin@admin.com</p>
+                        <!-- <p><b>{{ trans('site.opening_hour') }}:</b> {{ $setting->open }}</p> -->
                     </div>
                 </div>
 
@@ -56,6 +49,9 @@
                                     class="fas fa-envelope submitIcon"></i></button>
                         </form>
                         <p>{{ trans('site.Stay_tuned_for_our_latest_news') }}</p>
+                        <div class="header-btn">
+                            <a href="{{ route('quote') }}" class="main-btn primary">{{ trans('site.get_a_quote') }}</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -70,7 +66,7 @@
         <div class="row justify-content-center align-items-center">
             <div class="col-lg-6 col-12">
                 <div class="copyright-area">
-                    <p class="copyright-line">© {{ date('Y') }} <a href="https://topbusiness.io/index.php/contact/">Top Business</a> All rights reserved.</p>
+                    <p class="copyright-line">© {{ date('Y') }} <a href="https://allo.topbusiness.io/en/contact">IGCO</a> All rights reserved.</p>
                 </div>
             </div>
 
