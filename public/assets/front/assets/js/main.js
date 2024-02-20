@@ -159,6 +159,35 @@
 		}
 	});
 
+    // Project Slider
+
+	$(".partner-area .owl-carousel").owlCarousel({
+		autoplay: true,
+		autoplayhoverpause: true,
+		autoplaytimeout: 100,
+		items: 4,
+		nav: false,
+		loop: false,
+		dots: true,
+		responsive: {
+			0 : {
+				items: 1
+			},
+			485 : {
+				items: 1
+			},
+			728 : {
+				items: 2
+			},
+			879 : {
+				items: 3
+			},
+			1200 : {
+				items: 4
+			}
+		}
+	});
+
 	//jQuery Sticky Area
 	$(".sticky-area").sticky({
 		topSpacing: 0,

@@ -29,7 +29,9 @@
                 @foreach ($partners_success as $partner_success)
                     <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                         <div class="card-image">
-                            <img src="{{ asset($partner_success->image) }}" class="img-partner">
+                            <a target="_blank" href="{{ $partner_success->url }}" class="w-100">
+                                <img src="{{ asset($partner_success->image) }}" class="img-partner">
+                            </a>
                         </div>
                     </div>
                 @endforeach
