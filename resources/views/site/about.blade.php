@@ -110,6 +110,92 @@
         </div>
     </div>
 
+    <!-- Process Section  -->
+
+    <div class="process-area dark-bg section-padding">
+        <div class="container">
+            <!-- <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="section-title">
+                        <h6>{{ trans('site.recycling_wastage_save_environment') }}</h6>
+                        <h2 class="text-white">{{ trans('site.simple_steps_wastage') }}</h2>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="process-right-content">
+                        <p class="text-white">{{ trans('site.recycling_is_the_process_of_converting') }}</p>
+                        <p class="text-white">{{ trans('site.this_waste_management_video') }}</p>
+                        <div class="process-btn">
+                            <a href="{{ route('contact') }}" class="main-btn">{{ trans('site.get_started') }}</a>
+
+                            <button
+                                                class="btn-certificate bg-brown mb-3 mt-5"
+                                                onclick="profDownload('{{ asset($setting->profile) }}', 'profile Company')">QHSE Policy</button>
+
+                            <a href="#" class="main-btn white"> ISO Certificate - Currently under certification 9001-2008</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+
+            <div class="process-item-wrap">
+                <div class="row">
+                <div class="col-lg-4 col-12">
+                    <div class="process-single">
+                        <div class="process-icon">
+                            <img src="{{ asset('assets/front') }}/assets/img/icons-02.png" alt="" style="width: 60px;">
+                        </div>
+                        <div class="process-title">
+                            <h5>{{ trans('site.our_vision') }}</h5>
+                        </div>
+                        <div class="process-desc">
+                            <p style="text-align: justify;">
+                                @lang('site.vision')
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="process-single two">
+                        <div class="process-icon">
+                            <img src="{{ asset('assets/front') }}/assets/img/icons-03.png" alt="" style="width: 60px;">
+                        </div>
+                        <div class="process-title">
+                            <h5>{{ trans('site.our_mission') }}</h5>
+                        </div>
+                        <div class="process-desc">
+                            <p style="text-align: justify;">
+                                @lang('site.mission')
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="process-single three">
+                        <div class="process-icon">
+                            <img src="{{ asset('assets/front') }}/assets/img/icons-01.png" alt="" style="width: 60px;">
+                        </div>
+                        <div class="process-title">
+                            <h5>{{ trans('site.our_values') }} </h5>
+                        </div>
+                        <div class="process-desc">
+                            <p style="text-align: justify;">
+                                @lang('site.values')
+                            </p>
+                        </div>
+                        <!-- <div class="process-desc text-start"> -->
+
+                        <!-- </div>                         -->
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
     <!-- Choose Us Area  -->
 
     <div class="why-choose-two section-padding pb-0">
