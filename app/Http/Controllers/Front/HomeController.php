@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\NewsStore;
 use App\Models\Gallery;
 use App\Models\NewsLetter;
+use App\Models\PartnerSuccess;
 use App\Models\Product;
 use App\Models\Slider;
 use App\Models\Service;
@@ -17,6 +18,7 @@ class HomeController extends Controller
         $data['sliders'] = Slider::all();
         $data['services'] = Service::all();
         $data['products'] = Product::all();
+        $data['partners_success'] = PartnerSuccess::all();
         return view('site.index', compact('data'));
     }
 

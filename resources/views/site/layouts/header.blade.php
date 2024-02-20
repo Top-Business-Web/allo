@@ -1,5 +1,5 @@
 <!-- Header Top Area -->
-<div class="header-top">
+<!-- <div class="header-top">
     <div class="container">
         <div class="row">
             <div class="col-xl-10 col-lg-8 col-md-12 col-xs-12">
@@ -11,14 +11,14 @@
             </div>
             <div class="col-xl-2 col-lg-4 col-md-12 col-xs-12 text-end">
                 <div class="header_top_right">
-                    <!-- <div class="social-area">
+                    <div class="social-area">
                         <a href="{{ $setting->facebook }}"><i class="fab fa-facebook-f"></i></a>
                     </div>
                     <div class="quick_link">
                         <ul>
                             <li><a href="{{ route('faqs') }}">{{ trans('site.faqs') }}</a></li>
                         </ul>
-                    </div> -->
+                    </div>
                     <div class="lang-list">
                         <div class="dropdown">
 
@@ -35,7 +35,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <!-- Header Area -->
 
@@ -101,9 +101,21 @@
                         </nav>
                     </div>
 
-                    <div class="header-btn">
-                        <a href="{{ route('quote') }}" class="main-btn primary">{{ trans('site.get_a_quote') }}</a>
+                    <div class="lang-list">
+                        <div class="dropdown">
+
+                            @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                                <a class="btn btn-sm dropdown-toggle" rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                                    {{ $properties['native'] }}
+                                </a>
+                            @endforeach
+
+                        </div>
                     </div>
+                    
+                    <!-- <div class="header-btn">
+                        <a href="{{ route('quote') }}" class="main-btn primary">{{ trans('site.get_a_quote') }}</a>
+                    </div> -->
                 </div>
             </div>
         </div>
