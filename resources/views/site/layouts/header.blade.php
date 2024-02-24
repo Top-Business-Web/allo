@@ -112,7 +112,7 @@
 
                         </div>
                     </div>
-                    
+
                     <!-- <div class="header-btn">
                         <a href="{{ route('quote') }}" class="main-btn primary">{{ trans('site.get_a_quote') }}</a>
                     </div> -->
