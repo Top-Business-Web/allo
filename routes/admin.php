@@ -45,6 +45,9 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function () {
     #### Partner Success ####
     Route::resource('partners_success', 'PartnerSuccessController');
 
+    #### dist ####
+    Route::resource('dist', 'DistController');
+
     #### Partner Success ####
     Route::resource('gallery', 'GalleryController');
 
