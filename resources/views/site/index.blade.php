@@ -421,7 +421,7 @@
 </div>
 
 <!-- paretner -->
-<div class="partner-area section-padding">
+<div class="partner-area mb-5">
     <div class="container">
         <div class="section-title">
             <h2 class="text-center">{{ trans('site.partner_success') }}</h2>
