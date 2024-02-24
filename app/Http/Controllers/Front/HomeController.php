@@ -18,7 +18,7 @@ class HomeController extends Controller
         $data['sliders'] = Slider::all();
         $data['services'] = Service::all();
         $data['products'] = Product::all();
-        $data['partners_success'] = PartnerSuccess::all();
+        $data['partners_success'] = PartnerSuccess::query()->where('type','partner')->get();
         return view('site.index', compact('data'));
     }
 

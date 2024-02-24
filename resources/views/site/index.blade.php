@@ -431,7 +431,7 @@
             <!-- <div class="col-lg-3 col-md-4 col-sm-6 col-12"> -->
                 <div class="card-image m-2">
                     <a target="_blank" href="{{ $partner_success->url }}" class="w-100">
-                        <img src="{{ asset($partner_success->image) }}" class="img-partner">
+                        <img src="{{ asset($partner_success->image) }}" class="img-partner" style="height: 150px;">
                     </a>
                 </div>
             <!-- </div> -->
