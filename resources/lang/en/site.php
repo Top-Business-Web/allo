@@ -27,14 +27,14 @@ return [
     'our_vision' => 'Our vision',
     'our_mission' => 'Our mission',
 
-    'divisions' => 'Import And Export',
+    'divisions' => 'Trading',
     'enviro_group_for_services_and_waste_management' => 'IGCO',
 
     #### NavBar
     'home' => 'Home',
-    'about_us' => 'About Us',
+    'about_us' => 'Agencies',
     'services' => 'Services',
-    'projects' => 'heavy equipment and construction',
+    'projects' => 'Construction Equipment',
     'career' => 'Career',
     'news' => 'News',
     'contact' => 'Contact',
@@ -174,7 +174,7 @@ return [
     'latest_post' => 'Latest Post',
 
     #### Partner Success
-    'partner_success' => 'Partner Success',
+    'partner_success' => 'Distrubtion',
     'partner_head' => 'We provide distinguished and unique services',
 
 
@@ -193,8 +193,11 @@ return [
      'values' => '	Treat our associates and employees with honesty and integrity.
      	Follow the philosophy that open communication creates trusting productive relationships, commit to sharing information timely, accurately, and completely. Listen and understand rather than argue and judge',
      'gallery' => 'Gallery',
-     'branch'=>'Branch',
-     'branch1'=>'Dubai',
-     'branch2'=>'kuwait',
+     'branch_one'=>'United Kingdom',
+     'branch1'=>'5,1 Goat Wharf - TW8 OAS - Brentford,London',
+     'branch_second'=>'South Africa',
+     'branch2'=>'265 Lyra Street, Waterkloofrif ,pretoria',
+     'branch_third'=>'Kuwait',
+     'branch3'=>'Floor Num:8,mariam Complex ,Makkah street,fahaheel Kuwait'
 
 ];
