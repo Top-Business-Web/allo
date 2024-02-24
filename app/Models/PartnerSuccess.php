@@ -11,6 +11,7 @@ class PartnerSuccess extends Model
 
     protected $fillable = [
         'image',
-        'url'
+        'url',
+        'type'
     ];
 }

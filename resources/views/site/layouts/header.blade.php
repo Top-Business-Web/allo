@@ -85,7 +85,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link {{ $name_url == 'partner-success' ? 'active' : '' }}"
-                                            href="{{ route('partnerSuccess') }}">{{ trans('site.partner_success') }}</a>
+                                            href="{{ route('partnerSuccess') }}">{{ trans('site.distrubtion') }}</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link {{ $name_url == 'career' ? 'active' : '' }}" href="{{ route('career') }}">{{ trans('site.career') }}</a>

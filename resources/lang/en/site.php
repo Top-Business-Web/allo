@@ -35,7 +35,7 @@ return [
     'about_us' => 'Agencies',
     'services' => 'Services',
     'projects' => 'Construction Equipment',
-    'career' => 'Career',
+    'career' => 'Join Us',
     'news' => 'News',
     'contact' => 'Contact',
     'faqs' => 'Faqs',
@@ -174,7 +174,8 @@ return [
     'latest_post' => 'Latest Post',
 
     #### Partner Success
-    'partner_success' => 'Distrubtion',
+    'partner_success' => 'Partner Success',
+    'distrubtion' => 'Distrubtion',
     'partner_head' => 'We provide distinguished and unique services',
 
 

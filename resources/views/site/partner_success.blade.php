@@ -9,8 +9,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcroumb-title text-center">
-                        <h1>{{ trans('site.partner_success') }}</h1>
-                        <h6><a href="{{ route('home') }}">{{ trans('site.home') }}</a> / {{ trans('site.partner_success') }}
+                        <h1>{{ trans('site.distrubtion') }}</h1>
+                        <h6><a href="{{ route('home') }}">{{ trans('site.home') }}</a> / {{ trans('site.distrubtion') }}
                         </h6>
                     </div>
                 </div>
@@ -22,7 +22,7 @@
     <div class="partner-area section-padding">
         <div class="container">
             <div class="section-title">
-                <h6>{{ trans('site.partner_success') }}</h6>
+                <h6>{{ trans('site.distrubtion') }}</h6>
                 <h2>{{ trans('site.partner_head')}}</h2>
             </div>
             <div class="row">

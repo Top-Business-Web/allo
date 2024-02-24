@@ -9,19 +9,19 @@ use App\Models\PartnerSuccess;
 use Yajra\DataTables\DataTables;
 use App\Http\Controllers\Controller;
 
-class PartnerSuccessController extends Controller
+class DistController extends Controller
 {
     use PhotoTrait;
     public function index(request $request)
     {
         if ($request->ajax()) {
-            $partners_success = PartnerSuccess::query()->where('type','partner')->latest()->get();
-            return Datatables::of($partners_success)
-                ->addColumn('action', function ($partners_success) {
+            $dists = PartnerSuccess::query()->where('type','dist')->latest()->get();
+            return Datatables::of($dists)
+                ->addColumn('action', function ($dists) {
                     return '
-                                <button type="button" data-id="' . $partners_success->id . '" class="btn btn-pill btn-info-light editBtn"><i class="fa fa-edit"></i></button>
+                                <button type="button" data-id="' . $dists->id . '" class="btn btn-pill btn-info-light editBtn"><i class="fa fa-edit"></i></button>
                                 <button class="btn btn-pill btn-danger-light" data-toggle="modal" data-target="#delete_modal"
-                                        data-id="' . $partners_success->id . '">
+                                        data-id="' . $dists->id . '">
                                         <i class="fas fa-trash"></i>
                                 </button>
                            ';
@@ -34,20 +34,20 @@ class PartnerSuccessController extends Controller
                 ->escapeColumns([])
                 ->make(true);
         } else {
-            return view('admin/partners_success/index');
+            return view('admin/dists/index');
         }
     }
 
     public function create()
     {
-        return view('admin/partners_success/parts/create');
+        return view('admin/dists/parts/create');
     }
 
     public function store(Request $request)
     {
         $inputs = $request->all();
         if($request->has('image')){
-            $inputs['image'] = $this->saveImage($request->image,'assets/uploads/partners_success', 'photo');
+            $inputs['image'] = $this->saveImage($request->image,'assets/uploads/dists', 'photo');
         }
 
         if (PartnerSuccess::create($inputs)) {
@@ -57,22 +57,22 @@ class PartnerSuccessController extends Controller
         }
     }
 
-    public function edit(PartnerSuccess $partners_success)
+    public function edit(PartnerSuccess $dists)
     {
-        return view('admin/partners_success/parts/edit', compact('partners_success'));
+        return view('admin/dists/parts/edit', compact('dists'));
     }
 
     public function update(Request $request, $id)
     {
         try {
-            $partners_success = PartnerSuccess::findOrFail($id);
+            $dists = PartnerSuccess::findOrFail($id);
             $inputs = $request->all();
 
             if($request->has('image')){
-                $inputs['image'] = $this->saveImage($request->image,'assets/uploads/partners_success', 'photo');
+                $inputs['image'] = $this->saveImage($request->image,'assets/uploads/dists', 'photo');
             }
 
-            if ($partners_success->update($inputs)) {
+            if ($dists->update($inputs)) {
                 return response()->json(['status' => 200]);
             } else {
                 return response()->json(['status' => 405]);
@@ -84,8 +84,8 @@ class PartnerSuccessController extends Controller
 
     public function destroy(Request $request)
     {
-        $partners_success = PartnerSuccess::where('id', $request->id)->first();
-        $partners_success->delete();
+        $dists = PartnerSuccess::where('id', $request->id)->first();
+        $dists->delete();
         return response(['message' => 'تم الحذف بنجاح', 'status' => 200], 200);
     }
 }

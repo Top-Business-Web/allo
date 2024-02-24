@@ -34,7 +34,7 @@ return [
     'about_us' => ' الوكالات',
     'services' => 'خدمات',
     'projects' => ' معدات البناء',
-    'career' => 'حياة مهنية',
+    'career' => 'انضم الينا',
     'news' => 'الاخبار',
     'contact' => 'تواصل',
     'faqs' => 'الاسئلة الشائعة',
@@ -172,7 +172,8 @@ return [
     'latest_post' => 'أخر المنشورات',
 
     #### Partner Success
-    'partner_success' => ' التوزيع',
+    'partner_success' => ' شركاء النجاح',
+    'distrubtion' => 'التوزيع',
     'partner_head' => 'نقدم خدمات متميزة وفريدة',
 
 
