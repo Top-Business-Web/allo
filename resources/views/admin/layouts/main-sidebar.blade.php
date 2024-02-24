@@ -58,6 +58,12 @@
             </a>
         </li>
 
+        <li class="slide">
+            <a class="side-menu__item" href="{{route('dist.index')}}">
+                <i class="fa fa-newspaper side-menu__icon"></i>
+                <span class="side-menu__label">التوزيع</span>
+            </a>
+        </li>
 
         <li class="slide">
             <a class="side-menu__item" href="{{route('services.index')}}">
