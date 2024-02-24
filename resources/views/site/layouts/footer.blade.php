@@ -17,30 +17,41 @@
                     </div>
 
                 </div>
-                <div class="col-lg-3 col-md-6 com-sm-12">
-                    <h6>@lang('site.branch')</h6>
+                <div class="col-lg-2 col-md-6 com-sm-12">
+                    <h6>@lang('site.branch_one')</h6>
                     <div class="contact-info">
                         <p><b>{{ trans('site.location') }}
                                 : </b>@lang('site.branch1')</p>
-                        <p><b>{{ trans('site.phone') }}:</b> 010000000000</p>
-                        <p><b>{{ trans('site.email') }}:</b> admin@admin.com</p>
+                        <p><b>{{ trans('site.phone') }}:</b>0044 7378 813 780</p>
+                        <p><b>{{ trans('site.email') }}:</b> info@igcogroup.com</p>
                         <!-- <p><b>{{ trans('site.opening_hour') }}:</b> {{ $setting->open }}</p> -->
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 com-sm-12">
-                    <h6>@lang('site.branch')</h6>
+                <div class="col-lg-2 col-md-6 com-sm-12">
+                    <h6>@lang('site.branch_second')</h6>
                     <div class="contact-info">
                         <p><b>{{ trans('site.location') }}
                                 :</b> @lang('site.branch2')</p>
-                        <p><b>{{ trans('site.phone') }}:</b> 0100000000</p>
-                        <p><b>{{ trans('site.email') }}:</b> admin@admin.com</p>
+                        <p><b>{{ trans('site.phone') }}:</b>0027 823 736 897</p>
+                        <p><b>{{ trans('site.email') }}:</b> info@igcogroup.com</p>
+                        <!-- <p><b>{{ trans('site.opening_hour') }}:</b> {{ $setting->open }}</p> -->
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                <h6>@lang('site.branch_third')</h6>
+                    <div class="contact-info">
+                        <p><b>{{ trans('site.location') }}
+                                :</b> @lang('site.branch3')</p>
+                        <p><b>{{ trans('site.phone') }}:</b>00965-23934047</p>
+                        <p><b>{{ trans('site.email') }}:</b> info@igcogroup.com</p>
                         <!-- <p><b>{{ trans('site.opening_hour') }}:</b> {{ $setting->open }}</p> -->
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6">
-                    <div class="subscribe-form">
+                <div class="subscribe-form">
                         <h6>{{ trans('site.news_letter') }}</h6>
                         <form class="newsForm" id="newsForm">
                             @csrf
