@@ -99,5 +99,6 @@ class SliderController extends Controller
         $sliders = Slider::where('id', $request->id)->first();
         $sliders->delete();
         return response(['message' => 'تم الحذف بنجاح', 'status' => 200], 200);
-    }
+    } // end distory
+    
 }
