@@ -27,7 +27,7 @@ class SliderController extends Controller
                 })
                 ->editColumn('image', function ($sliders) {
                     return '
-                    <img alt="image" onclick="window.open(this.src)" class="avatar avatar-md rounded-circle" src="' . asset('assets/admin/Sliders/images/'. $sliders->image) . '">
+                    <img alt="image" onclick="window.open(this.src)" class="avatar avatar-md rounded-circle" src="' . asset('assets/admin/sliders/images/'. $sliders->image) . '">
                     ';
                 })
                 ->escapeColumns([])
