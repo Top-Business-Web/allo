@@ -73,6 +73,11 @@
                                                    placeholder="{{ trans('site.company_name_if_applicable') }}">
                                         </div>
                                     </div>
+                                    <div class="col-md-12 mb-20">
+                                        <div class="quotation-item">
+                                        <textarea class="form-control" rows="10" name="message" placeholder="{{ trans('site.write_a_message') }}"></textarea>
+                                        </div>
+                                    </div>
                                 </div>
                                 <button type="button" id="quote-btn" class="main-btn primary">{{ trans('site.submit') }}</button>
                                 <div class="col-12">

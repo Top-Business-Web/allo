@@ -84,51 +84,9 @@
                                             {{ trans('site.enviro_group_aims') }}
                                     </p> --}}
 
-                                    <!-- <button
-                                                class="main-btn bg-brown mb-3 mt-5"
-                                                onclick="profDownload('{{ asset($setting->profile) }}', 'profile Company')">{{ trans('site.Profile_company') }}
-                                            </button> -->
-
-                                    <!-- <div class="row mt-20">
-                                            <div class="col-lg-4 col-md-4 col-12">
-                                                <div class="featured-area">
-                                                    <div class="featured-icon">
-                                                        <i class="fas fa-business-time"></i>
-                                                    </div>
-                                                    <div class="featured-content">
-                                                        <div class="featured-title">
-                                                            <h5>{{ trans('site.ontime_at') }}
-                                                                <br>{{ trans('site.services') }}</h5>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-4 col-12">
-                                                <div class="featured-area">
-                                                    <div class="featured-icon">
-                                                        <i class="fas fa-stopwatch"></i>
-                                                    </div>
-                                                    <div class="featured-content">
-                                                        <div class="featured-title">
-                                                            <h5>24/7 <br>{{ trans('site.services') }}</h5>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-md-4 col-12">
-                                                <div class="featured-area">
-                                                    <div class="featured-icon">
-                                                        <i class="fas fa-money-check-alt"></i>
-                                                    </div>
-                                                    <div class="featured-content">
-                                                        <div class="featured-title">
-                                                            <h5>{{ trans('site.affordable') }}
-                                                                <br>{{ trans('site.cost') }}</h5>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> -->
+                                    <a href="{{ route('about') }}" class="main-btn mb-3 mt-5">
+                                        {{ trans('site.read_more') }}
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -178,214 +136,21 @@
                     </h4>
                     <hr>
                     <p>{{ app()->getLocale() == 'ar' ? $service->desc_ar : $service->desc_en }}</p>
-                    <!-- <ul class="list-unstyled service-list">
-                                <li><i class="fas fa-check"></i>{{ trans('site.collect_separate_materials')}}</li>
-                                <li><i class="fas fa-check"></i>{{ trans('site.reduce_recycling_into_raw_material') }}
-                                </li>
-                                <li><i class="fas fa-check"></i>{{ trans('site.turn_raw_material_into_product') }}</li>
-                            </ul> -->
                     <a class="main-btn primary" href="{{ route('singleService', $service->id) }}">{{ trans('site.find_out_more') }}</a>
                 </div>
             </div>
             @endforeach
         </div>
+
+        <div class="d-flex justify-content-center">
+            <a href="{{ route('service') }}" class="main-btn mb-3 mt-5">
+                {{ trans('site.read_more') }}
+            </a>
+        </div>
+
     </div>
 </div>
 
-<!-- Process Section  -->
-
-<div class="process-area dark-bg section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-4">
-                <div class="section-title">
-                    <!-- <h6>{{ trans('site.recycling_wastage_save_environment') }}</h6> -->
-                    <h2 class="text-white">{{ trans('site.simple_steps_wastage') }}</h2>
-                </div>
-            </div>
-            <div class="col-lg-8">
-                <div class="process-right-content">
-                    <!-- <p class="text-white">{{ trans('site.recycling_is_the_process_of_converting') }}</p>
-                        <p class="text-white">{{ trans('site.this_waste_management_video') }}</p> -->
-                    <div class="process-btn">
-                        <!-- <a href="{{ route('contact') }}" class="main-btn">{{ trans('site.get_started') }}</a> -->
-
-                        <button class="btn-certificate bg-brown mb-3 mt-5" onclick="profDownload('{{ asset($setting->profile) }}', 'profile Company')">QHSE Policy</button>
-
-                        <a href="#" class="main-btn white"> ISO Certificate - Currently under certification 9001-2008</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="process-item-wrap">
-            <div class="row">
-                <div class="col-lg-4 col-12">
-                    <div class="process-single">
-                        <div class="process-icon">
-                            <img src="{{ asset('assets/front') }}/assets/img/icons-02.png" alt="" style="width: 60px;">
-                        </div>
-                        <div class="process-title">
-                            <h5>{{ trans('site.our_vision') }}</h5>
-                        </div>
-                        <div class="process-desc">
-                            <p style="text-align: justify;">
-                                @lang('site.vision')
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12">
-                    <div class="process-single two">
-                        <div class="process-icon">
-                            <img src="{{ asset('assets/front') }}/assets/img/icons-03.png" alt="" style="width: 60px;">
-                        </div>
-                        <div class="process-title">
-                            <h5>{{ trans('site.our_mission') }}</h5>
-                        </div>
-                        <div class="process-desc">
-                            <p style="text-align: justify;">
-                                @lang('site.mission')
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-12">
-                    <div class="process-single three">
-                        <div class="process-icon">
-                            <img src="{{ asset('assets/front') }}/assets/img/icons-01.png" alt="" style="width: 60px;">
-                        </div>
-                        <div class="process-title">
-                            <h5>{{ trans('site.our_values') }} </h5>
-                        </div>
-                        <div class="process-desc">
-                            <p style="text-align: justify;">
-                                @lang('site.values')
-                            </p>
-                        </div>
-                        <!-- <div class="process-desc text-start"> -->
-
-                        <!-- </div>                         -->
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<!-- Choose Us Area  -->
-
-<!-- <div class="why-choose-two section-padding">
-        <div class="container">
-            <div class="section-title text-center">
-                <h6>{{ trans('site.our_pontential_benefits') }}</h6>
-                <h2>{{ trans('site.why_you_should_choose_our_services') }}</h2>
-            </div>
-            <div class="image-all-egypt">
-                <img src="{{ asset('assets/front/') }}/assets/img/img-all-egypt.jpg">
-            </div>
-        </div>
-    </div> -->
-
-<!-- Contact Section  -->
-
-<!-- <div class="contact-area section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-5 col-lg-6">
-                    <div class="contact-wrap">
-                        <div class="section-title">
-                            <h2 class="text-white">{{ trans('site.time_is_the_best_way_to_thin_About_recycling') }}</h2>
-                        </div>
-                        <div class="contact-desc">
-                            <p class="text-white">
-                                {{ trans('site.we_offer_product') }}
-                            </p>
-                        </div>
-                        <div class="contact-list-wrap">
-                            <div class="row">
-                                <div class="col-12 col-md-6 col-sm-6 col-lg-6">
-                                    <ul class="list-unstyled contact-list">
-                                        <li><i class="fas fa-check"></i> {{ trans('site.reduce_greenhouse_effect') }}
-                                        </li>
-                                        <li><i class="fas fa-check"></i>{{ trans('site.conserv_natural_resources') }}
-                                        </li>
-                                        <li><i class="fas fa-check"></i>{{ trans('site.reduces_carbon_emissions') }}
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-12 col-md-6 col-sm-6 col-lg-6">
-                                    <ul class="list-unstyled contact-list">
-                                        <li><i class="fas fa-check"></i>{{ trans('site.protects_ecosystems') }}</li>
-                                        <li><i class="fas fa-check"></i>{{ trans('site.economic_Benefits') }}</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contact-btn">
-                            <a class="main-btn" href="{{ trans('about') }}">{{ trans('site.learn_more') }}</a>
-                            <a class="main-btn white" href="{{ trans('faqs') }}">{{ trans('site.our_core_values') }}</a>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 offset-xl-1">
-                    <div class="quotation-wrap">
-                        <div class="quotation-inner">
-                            <h5 class="quotation-heading">{{ trans('site.get_a_quote') }}</h5>
-                            <p class="quotation-desc">
-                                {{ trans('site.we_take_great_pride') }}
-                            </p>
-                            <form class="quoteForm" id="quoteForm">
-                                @csrf
-                                <div class="row">
-                                    <div class="col-12 col-md-6">
-                                        <label class="form-label" for="contact-usage">{{ trans('site.first_name') }}
-                                        </label>
-                                        <input class="form-control" type="text" name="first_name"
-                                               placeholder="{{ trans('site.first_name') }}" required=""/>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <label class="form-label" for="contact-usage">{{ trans('site.last_name') }}
-                                        </label>
-                                        <input class="form-control" type="text" name="last_name"
-                                               placeholder="{{ trans('site.last_name') }}" required=""/>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <label class="form-label" for="contact-usage">{{ trans('site.name_company') }}
-                                        </label>
-                                        <input class="form-control" type="text" name="company"
-                                               placeholder="{{ trans('site.name_company') }}"
-                                               required=""/>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <label class="form-label" for="contact-usage">{{ trans('site.phone') }}
-                                        </label>
-                                        <input class="form-control" type="number" name="phone"
-                                               placeholder="{{ trans('site.phone') }}"
-                                               required=""/>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <label class="form-label" for="contact-usage">{{ trans('site.email') }}
-                                        </label>
-                                        <input class="form-control" type="email" name="email"
-                                               placeholder="{{ trans('site.email') }}" required=""/>
-                                    </div>
-
-                                    <div class="col-12">
-                                        <button type="button" id="quote-btn"
-                                                class="main-btn primary">{{ trans('site.submit') }}</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
 <!-- product Section  -->
 
@@ -416,27 +181,41 @@
                 </div>
                 @endforeach
             </div>
+
+            <div class="d-flex justify-content-center">
+            <a href="{{ route('projects') }}" class="main-btn mb-3 mt-5">
+                {{ trans('site.read_more') }}
+            </a>
+        </div>
+
         </div>
     </div>
 </div>
 
 <!-- paretner -->
-<div class="partner-area mb-5">
+<div class="partner-area gray-bg section-padding">
     <div class="container">
         <div class="section-title">
             <h2 class="text-center">{{ trans('site.partner_success') }}</h2>
         </div>
         <div class="owl-carousel owl-theme">
             @foreach ($data['partners_success'] as $partner_success)
-            <!-- <div class="col-lg-3 col-md-4 col-sm-6 col-12"> -->
+            <div class="d-flex justify-content-center">
                 <div class="card-image m-2">
                     <a target="_blank" href="{{ $partner_success->url }}" class="w-100">
-                        <img src="{{ asset($partner_success->image) }}" class="img-partner" style="height: 150px;">
+                        <img src="{{ asset($partner_success->image) }}" class="img-partner">
                     </a>
                 </div>
-            <!-- </div> -->
+            </div>
             @endforeach
         </div>
+
+        <div class="d-flex justify-content-center">
+            <a href="{{ route('partnerSuccess') }}" class="main-btn mt-5">
+                {{ trans('site.read_more') }}
+            </a>
+        </div>
+
     </div>
 </div>
 
