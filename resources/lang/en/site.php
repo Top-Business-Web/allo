@@ -32,9 +32,9 @@ return [
 
     #### NavBar
     'home' => 'Home',
-    'about_us' => 'Agencies',
+    'about_us' => 'About us',
     'services' => 'Services',
-    'projects' => 'Construction Equipment',
+    'projects' => 'Projects',
     'career' => 'Join Us',
     'news' => 'News',
     'contact' => 'Contact',
@@ -199,6 +199,7 @@ return [
      'branch_second'=>'South Africa',
      'branch2'=>'265 Lyra Street, Waterkloofrif ,pretoria',
      'branch_third'=>'Kuwait',
-     'branch3'=>'Floor Num:8,mariam Complex ,Makkah street,fahaheel Kuwait'
+     'branch3'=>'Floor Num:8,mariam Complex ,Makkah street,fahaheel Kuwait',
+     'tracktor_gallery'=>'Tracktor Gallery'
 
 ];
