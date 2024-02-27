@@ -28,6 +28,7 @@
                                 <th>صورة لوجو</th>
                                 <th>العنوان</th>
                                 <th>الوصف</th>
+                                <th>الملف</th>
                                 <th class="rounded-end">العمليات</th>
                             </tr>
                             </thead>
@@ -96,6 +97,7 @@
             {data: 'image_logo', name: 'image_logo'},
             {data: 'title_ar', name: 'title_ar'},
             {data: 'desc_ar', name: 'desc_ar'},
+            {data: 'file', name: 'file'},
             {data: 'action', name: 'action', orderable: false, searchable: false},
         ]
         showData('{{route('services.index')}}', columns);
