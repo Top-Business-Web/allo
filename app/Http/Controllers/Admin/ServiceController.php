@@ -44,6 +44,14 @@ class ServiceController extends Controller
                     <img alt="image" onclick="window.open(this.src)" class="avatar avatar-md rounded-circle" src="' . asset($services->image_logo) . '">
                     ';
                 })
+                ->editColumn('file', function ($services) {
+                    return '
+                        <span class="btn btn-success">
+                            <i class="fas fa-file" onclick="window.open(this.getAttribute(\'data-src\'))" data-src="'.asset($services->file).'"></i>
+                        </span>
+                        ';
+                })
+
                 ->escapeColumns([])
                 ->make(true);
         } else {
@@ -66,8 +74,13 @@ class ServiceController extends Controller
                 $inputs['images'][] = $this->saveImage($file,'assets/uploads/services','photo');
             }
         }
+
         if($request->has('image_logo')){
                 $inputs['image_logo'] = $this->saveImage($request->image_logo,'assets/uploads/services','photo');
+        }
+
+        if($request->has('file')){
+            $inputs['file'] = $this->saveImage($request->file,'assets/uploads/services','photo');
         }
 
         if (Service::create($inputs)) {
@@ -98,6 +111,10 @@ class ServiceController extends Controller
 
             if($request->has('image_logo')){
                 $inputs['image_logo'] = $this->saveImage($request->image_logo,'assets/uploads/services','photo');
+            }
+
+            if($request->has('file')){
+                $inputs['file'] = $this->saveImage($request->file,'assets/uploads/services','photo');
             }
 
             if ($services->update($inputs)) {
