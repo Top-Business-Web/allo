@@ -16,10 +16,14 @@ class QuoteController extends Controller
             return Datatables::of($quotes)
                 ->addColumn('action', function ($quotes) {
                     return '
-                                <button class="btn btn-pill btn-danger-light" data-toggle="modal" data-target="#delete_modal"
-                                        data-id="' . $quotes->id . '" data-title="' . $quotes->title_ar . '">
-                                        <i class="fas fa-trash"></i>
-                                </button>
+                            <button type="button" data-id="' . $quotes->id . '" data-msg="' . $quotes->message . '"
+                            data-toggle="modal" data-target="#view_modal" class="btn btn-pill btn-info-light editBtn">
+                            <i class="fa fa-eye"></i>
+                            </button>
+                            <button class="btn btn-pill btn-danger-light" data-toggle="modal" data-target="#delete_modal"
+                                    data-id="' . $quotes->id . '" data-title="' . $quotes->title_ar . '">
+                                    <i class="fas fa-trash"></i>
+                            </button>
                            ';
                 })
                 ->escapeColumns([])
@@ -27,6 +31,11 @@ class QuoteController extends Controller
         } else {
             return view('admin/quotes/index');
         }
+    }
+
+    public function edit(Quote $quote)
+    {
+        return view('admin/quotes/edit');
     }
 
     public function destroy(Request $request)

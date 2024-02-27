@@ -50,6 +50,14 @@
                 <textarea class="form-control" rows="8" name="desc_en" id="desc_ar">{{ $service->desc_en }}</textarea>
             </div>
         </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="desc_en" class="form-control-label">الملف</label>
+                <input type="file" class="dropify" name="file" value="{{ asset($service->file) }}"
+                       data-default-file="{{ asset($service->file) }}"
+                       accept="application/pdf"/>
+            </div>
+        </div>
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">اغلاق</button>

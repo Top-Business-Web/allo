@@ -1,8 +1,10 @@
 @extends('admin/layouts/master')
 @section('title')
-     اقتباسات
+    اقتباسات
 @endsection
-@section('page_name')  اقتباسات  @endsection
+@section('page_name')
+    اقتباسات
+@endsection
 @section('content')
     <div class="row">
         <div class="col-md-12 col-lg-12">
@@ -57,6 +59,30 @@
         </div>
         <!-- MODAL CLOSED -->
 
+        <!--View MODAL -->
+        <div class="modal fade" id="view_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">عرض الرسالة</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h3 id="body"></h3>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" id="dismiss_delete_modal">
+                            اغلاق
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MODAL CLOSED -->
+
     </div>
     @include('admin/layouts/myAjaxHelper')
 
@@ -77,6 +103,19 @@
 
         deleteAny('{{route('quotes.destroy', ':id')}}');
 
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            //Show data in the delete form
+            $('#view_modal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget)
+                var title = button.data('msg')
+                var modal = $(this)
+                modal.find('.modal-body #body').text(title);
+            });
+        });
     </script>
 @endsection
 
