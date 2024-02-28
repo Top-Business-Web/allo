@@ -19,9 +19,10 @@ class CareerController extends Controller
         return view('site.careers',compact('jobs'));
     } // end careers
 
-    public function index()
+    public function index(Request $request)
     {
-        return view('site.career');
+        $job = Job::query()->findOrFail($request->job_id);
+        return view('site.career',compact('job'));
     }
 
     public function storeCareer(StoreCareer $request)
