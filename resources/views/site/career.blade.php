@@ -106,7 +106,7 @@
                         $('#contactForm input').val('');
                         $('#career-btn').prop('disabled', true);
                         setTimeout(function () {
-                            window.location.href = '{{ route('career') }}';
+                            window.location.href = '{{ route('careers') }}';
                         },2000)
 
                     }
