@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreCareer;
 use App\Http\Requests\StoreContact;
 use App\Models\Career;
+use App\Models\Job;
 use App\Traits\PhotoTrait;
 use Illuminate\Http\Request;
 
@@ -14,7 +15,8 @@ class CareerController extends Controller
     use PhotoTrait;
     public function careers()
     {
-        return view('site.careers');
+        $jobs = Job::latest()->get();
+        return view('site.careers',compact('jobs'));
     } // end careers
 
     public function index()
