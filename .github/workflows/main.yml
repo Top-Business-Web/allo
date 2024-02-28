@@ -13,7 +13,7 @@ jobs:
       uses: easingthemes/ssh-deploy@main
       with:
         TARGET: domains/topbusiness.io/public_html/allo
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY_1 }}
         REMOTE_HOST: 31.220.106.209
         REMOTE_USER: u463118956
         REMOTE_PORT: 65002
