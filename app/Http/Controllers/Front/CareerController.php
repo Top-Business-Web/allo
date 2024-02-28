@@ -12,6 +12,11 @@ use Illuminate\Http\Request;
 class CareerController extends Controller
 {
     use PhotoTrait;
+    public function careers()
+    {
+        return view('site.careers');
+    } // end careers
+
     public function index()
     {
         return view('site.career');
