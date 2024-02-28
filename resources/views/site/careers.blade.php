@@ -44,7 +44,7 @@
                             </div>
                             <div class="blog-content">
                                 <h5>
-                                    <a href="{{ route('career',['job_id'=>$job->id,$randomString]) }}">{{ app()->getLocale() == 'ar' ? $job->title_ar : $job->title_en }}</a>
+                                    <a href="{{ route('career',['token'=>$randomString,'job_id'=>$job->id]) }}">{{ app()->getLocale() == 'ar' ? $job->title_ar : $job->title_en }}</a>
                                 </h5>
                                 <p>{{ app()->getLocale() == 'ar' ? $job->description_ar : $job->description_en }}</p>
 
