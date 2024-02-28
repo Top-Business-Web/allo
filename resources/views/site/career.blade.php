@@ -18,7 +18,6 @@
         </div>
     </div>
 
-
     <div class="section-career gray-bg section-padding">
         <form class="careerForm" id="careerForm">
             @csrf
@@ -28,8 +27,11 @@
                                 <img src="{{ asset('assets/front') }}/assets/img/career.png" style="width: 50px;">
                                 <h6>{{ trans('site.join_us') }}</h6>
                                 <h2 style="margin: 0; font-size: 40px;">{{ trans('site.we_wish') }}!</h2>
-                                <p>
+                                <div class="d-flex justify-content-center">
+                                <p class="text-black-50" style="width: 80%;">
+                                    {{ app()->getLocale() == 'ar' ? $job->description_ar : $job->description_en }}
                                 </p>
+                                </div>
                             </div>
 
                             <div class="d-flex justify-content-center align-items-center mt-5">
