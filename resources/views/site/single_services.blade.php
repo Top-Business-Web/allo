@@ -30,7 +30,8 @@
                         <div class="service-details_sidebar-service">
                             <ul class="service-details_sidebar-service-list list-unstyled">
                                 @foreach ($data['services'] as $service)
-                                    <li class="d-block {{ $service->id == $data['single_service']['id'] ? 'current' : '' }}"><a
+                                    <li class="d-block {{ $service->id == $data['single_service']['id'] ? 'current' : '' }}">
+                                        <a
                                             href="{{ route('singleService', $service->id) }}">{{ app()->getLocale() == 'ar' ? $service->title_ar : $service->title_en }}
                                             <span> <i
                                                     class="fas fa-long-arrow-alt-right"></i></span></a></li>
@@ -57,17 +58,20 @@
                         <div class="service-details_content">
                             <div class="d-flex justify-content-between">
                                 <div>
-                                <h3 class="service-details_title">{{ app()->getLocale() == 'ar' ? $data['single_service']->title_ar : $data['single_service']->title_en }}</h3>
+                                    <h3 class="service-details_title">{{ app()->getLocale() == 'ar' ? $data['single_service']->title_ar : $data['single_service']->title_en }}</h3>
                                 </div>
                                 <div>
-                                    <button class="main-btn">{{ trans('site.Profile_company') }}</button>
+                                    <button class="main-btn" onclick="window.open('{{ asset($data['single_service']->file) }}')">
+                                            {{ trans('site.Profile_company') }}
+                                    </button>
                                 </div>
                             </div>
                             @if($data['single_service']->id == 15)
                                 <div class="mb-4">
-                                    <a class="main-btn" href="{{ route('galleryIndex') }}">{{ trans('site.tracktor_gallery') }}</a>
+                                    <a class="main-btn"
+                                       href="{{ route('galleryIndex') }}">{{ trans('site.tracktor_gallery') }}</a>
                                 </div>
-                                @endif
+                            @endif
                             <p class="service-details_text-1 mb-5">{{ app()->getLocale() == 'ar' ? $data['single_service']->desc_ar : $data['single_service']->desc_en }} </p>
                         </div>
 
@@ -76,7 +80,8 @@
                                 <ul class="splide__list">
                                     @foreach($data['single_service']->images as $image)
                                         <li class="splide__slide">
-                                            <img src="{{ asset($image) }}" alt="no-image" style="height:500px !important;">
+                                            <img src="{{ asset($image) }}" alt="no-image"
+                                                 style="height:500px !important;">
                                         </li>
                                     @endforeach
                                 </ul>
@@ -91,36 +96,6 @@
                                 </li>
                             @endforeach
                         </ul>
-
-                        <!-- <ul class="service-details_two-icons list-unstyled">
-                            <li class="service-details_two-icon-single">
-                                <div class="service-details_two-icon">
-								<span class="service-icon">
-									<img src="{{ asset('assets/front') }}/assets/img/icon/1.png" alt="">
-								</span>
-                                </div>
-                                <p class="service-details_two-icon-content" style="margin-top: 35px;">
-                                    {{ trans('site.better_environment') }}
-                                </p>
-                            </li>
-                            <li class="service-details_two-icon-single">
-                                <div class="service-details_two-icon">
-								<span class="service-icon">
-									<img src="{{ asset('assets/front') }}/assets/img/icon/2.png" alt="">
-								</span>
-                                </div>
-                                <p class="service-details_two-icon-content" style="margin-top: 35px;">
-                                    {{ trans('site.better_future') }}
-                                </p>
-                            </li>
-                        </ul>
-                        <p class="service-details_text-3">{{ trans('site.paper_gift') }}</p>
-                        <div class="service-details_bottom">
-                            <div class="service-details_bottom-icon">
-                                <img src="assets/img/icon/recycling.png" style="width: 70px;" alt="">
-                            </div>
-                            <p class="service-details_bottom-text">{{ trans('site.recycling_is') }}</p>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -130,41 +105,41 @@
 
     <script>
 
-        var splide = new Splide( '#main-carousel', {
+        var splide = new Splide('#main-carousel', {
             pagination: false,
-        } );
+        });
 
 
-        var thumbnails = document.getElementsByClassName( 'thumbnail' );
+        var thumbnails = document.getElementsByClassName('thumbnail');
         var current;
 
 
-        for ( var i = 0; i < thumbnails.length; i++ ) {
-            initThumbnail( thumbnails[ i ], i );
+        for (var i = 0; i < thumbnails.length; i++) {
+            initThumbnail(thumbnails[i], i);
         }
 
 
-        function initThumbnail( thumbnail, index ) {
-            thumbnail.addEventListener( 'click', function () {
-                splide.go( index );
-            } );
+        function initThumbnail(thumbnail, index) {
+            thumbnail.addEventListener('click', function () {
+                splide.go(index);
+            });
         }
 
 
-        splide.on( 'mounted move', function () {
-            var thumbnail = thumbnails[ splide.index ];
+        splide.on('mounted move', function () {
+            var thumbnail = thumbnails[splide.index];
 
 
-            if ( thumbnail ) {
-                if ( current ) {
-                    current.classList.remove( 'is-active' );
+            if (thumbnail) {
+                if (current) {
+                    current.classList.remove('is-active');
                 }
 
 
-                thumbnail.classList.add( 'is-active' );
+                thumbnail.classList.add('is-active');
                 current = thumbnail;
             }
-        } );
+        });
 
 
         splide.mount();
