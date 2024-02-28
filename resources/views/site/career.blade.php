@@ -22,37 +22,38 @@
     <div class="section-career gray-bg section-padding">
         <form class="careerForm" id="careerForm">
             @csrf
-            <div class="container">
-                <div class="section-title text-center">
-                    <img src="{{ asset('assets/front') }}/assets/img/career.png" style="width: 50px;">
-                    <h6>{{ trans('site.join_us') }}</h6>
-                    <h2 style="margin: 0; font-size: 40px;">{{ trans('site.we_wish') }}!</h2>
-                    <p>
-                    </p>
-                </div>
+            <input type="hidden" name="job" value="{{ $job->title_ar }}">
+                        <div class="container">
+                            <div class="section-title text-center">
+                                <img src="{{ asset('assets/front') }}/assets/img/career.png" style="width: 50px;">
+                                <h6>{{ trans('site.join_us') }}</h6>
+                                <h2 style="margin: 0; font-size: 40px;">{{ trans('site.we_wish') }}!</h2>
+                                <p>
+                                </p>
+                            </div>
 
-                <div class="d-flex justify-content-center align-items-center mt-5">
-                    <div class="information-cv d-flex justify-content-center align-items-center flex-column">
+                            <div class="d-flex justify-content-center align-items-center mt-5">
+                                <div class="information-cv d-flex justify-content-center align-items-center flex-column">
 
-                        <input type="file" class="dropify drag-file" accept="application/pdf" name="file">
-                        <section class="uploaded-area"></section>
-                        <div class="row form-contact mt-5">
-                            <div class="col-md-6 col-sm-12 mb-4">
-                                <input type="text" class="w-100 p-3" name="name" placeholder=" {{ trans('site.name') }}"
-                                       required>
-                            </div>
-                            <div class="col-md-6 col-sm-12 mb-4">
-                                <input type="email" class="w-100 p-3" name="email"
-                                       placeholder=" {{ trans('site.email') }}" required>
-                            </div>
-                            <div class="col-md-6 col-sm-12 mb-4">
-                                <input type="number" class="w-100 p-3" name="age"
-                                       placeholder=" {{ trans('site.age') }}" required>
-                            </div>
-                            <div class="col-md-6 col-sm-12 mb-4">
-                                <input type="text" class="w-100 p-3" name="job"
-                                       placeholder=" {{ trans('site.job') }}" required>
-                            </div>
+                                    <input type="file" class="dropify drag-file" accept="application/pdf" name="file">
+                                    <section class="uploaded-area"></section>
+                                    <div class="row form-contact mt-5">
+                                        <div class="col-md-6 col-sm-12 mb-4">
+                                            <input type="text" class="w-100 p-3" name="name" placeholder=" {{ trans('site.name') }}"
+                                                   required>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 mb-4">
+                                            <input type="email" class="w-100 p-3" name="email"
+                                                   placeholder=" {{ trans('site.email') }}" required>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 mb-4">
+                                            <input type="number" class="w-100 p-3" name="age"
+                                                   placeholder=" {{ trans('site.age') }}" required>
+                                        </div>
+            {{--                            <div class="col-md-6 col-sm-12 mb-4">--}}
+{{--                                <input type="text" class="w-100 p-3" name="job"--}}
+{{--                                       placeholder=" {{ trans('site.job') }}" required>--}}
+{{--                            </div>--}}
                             <div class="col-md-6 col-sm-12 mb-4">
                                 <input type="text" class="w-100 p-3" name="phone"
                                        placeholder=" {{ trans('site.phone') }}" required>
