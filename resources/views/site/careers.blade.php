@@ -39,8 +39,9 @@
                                 @php
                                     $created_at = $job->created_at;
                                     $month_name = date("F", strtotime($created_at));
+                                    $day_name = date("d", strtotime($created_at));
                                 @endphp
-                                <span class="blog-date">{{ $job->created_at->format('m') }} {{ $month_name }}</span>
+                                <span class="blog-date">{{ $day_name }} {{ $month_name }}</span>
                             </div>
                             <div class="blog-content">
                                 <h5>
