@@ -38,7 +38,7 @@
                                 <img src="{{ asset($job->image) }}" alt="">
                                 @php
                                     $created_at = $job->created_at;
-                                    $month_name = date("F", strtotime($created_at));
+                                    $month_name = date("M", strtotime($created_at));
                                     $day_name = date("d", strtotime($created_at));
                                 @endphp
                                 <span class="blog-date">{{ $day_name }} {{ $month_name }}</span>
