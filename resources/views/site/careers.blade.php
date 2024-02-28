@@ -1,7 +1,16 @@
 @extends('site.layouts.master')
 @section('content')
+    <?php
+    $length = 100; // Set the desired length of the random string
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%';
+    $randomString = '';
 
-    <!-- Breadcroumb Area -->
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, strlen($characters) - 1)];
+    }
+
+    ?>
+            <!-- Breadcroumb Area -->
 
     <div class="breadcroumb-area bread-bg" style="background-image: url('{{ asset($bgImages->career_img) }}')">
         <div class="overlay-2"></div>
@@ -27,16 +36,16 @@
                         <div class="single-blog-item">
                             <div class="blog-bg">
                                 <img src="{{ asset($job->image) }}" alt="">
-                                    <?php
+                                @php
                                     $created_at = $job->created_at;
-
                                     $month_name = date("F", strtotime($created_at));
-
-                                    ?>
+                                @endphp
                                 <span class="blog-date">{{ $job->created_at->format('m') }} {{ $month_name }}</span>
                             </div>
                             <div class="blog-content">
-                                <h5><a href="{{ route('career') }}">{{ app()->getLocale() == 'ar' ? $job->title_ar : $job->title_en }}</a></h5>
+                                <h5>
+                                    <a href="{{ route('career',['job_id'=>$job->id,$randomString]) }}">{{ app()->getLocale() == 'ar' ? $job->title_ar : $job->title_en }}</a>
+                                </h5>
                                 <p>{{ app()->getLocale() == 'ar' ? $job->description_ar : $job->description_en }}</p>
 
                             </div>
