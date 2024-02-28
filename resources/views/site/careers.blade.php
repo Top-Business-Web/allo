@@ -17,5 +17,37 @@
             </div>
         </div>
     </div>
+
+    <!-- Blog Section-->
+    <div class="blog-area section-padding">
+        <div class="container">
+            <div class="row">
+                @foreach ($jobs as $job)
+                    <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay=".2s">
+                        <div class="single-blog-item">
+                            <div class="blog-bg">
+                                <img src="{{ asset($job->image) }}" alt="">
+                                    <?php
+                                    $created_at = $job->created_at;
+
+                                    $month_name = date("F", strtotime($created_at));
+
+                                    ?>
+                                <span class="blog-date">{{ $job->created_at->format('m') }} {{ $month_name }}</span>
+                            </div>
+                            <div class="blog-content">
+                                <h5><a href="{{ route('career') }}">{{ app()->getLocale() == 'ar' ? $job->title_ar : $job->title_en }}</a></h5>
+                                <p>{{ app()->getLocale() == 'ar' ? $job->description_ar : $job->description_en }}</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+
+
 @endsection
 
