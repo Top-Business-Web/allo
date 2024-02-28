@@ -9,8 +9,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcroumb-title text-center">
-                        <h1>{{ trans('site.distrubtion') }}</h1>
-                        <h6><a href="{{ route('home') }}">{{ trans('site.home') }}</a> / {{ trans('site.distrubtion') }}
+                        <h1>{{ trans('site.partners') }}</h1>
+                        <h6><a href="{{ route('home') }}">{{ trans('site.home') }}</a> / {{ trans('site.partners') }}
                         </h6>
                     </div>
                 </div>

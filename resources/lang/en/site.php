@@ -175,6 +175,7 @@ return [
 
     #### Partner Success
     'partner_success' => 'Partner Success',
+    'partners' => 'Partners',
     'distrubtion' => 'Distrubtion',
     'partner_head' => 'We provide distinguished and unique services',
 

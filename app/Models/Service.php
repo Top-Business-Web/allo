@@ -16,6 +16,7 @@ class Service extends Model
         'title_en',
         'desc_ar',
         'desc_en',
+        'file'
     ];
 
     protected $casts = [

@@ -173,6 +173,7 @@ return [
 
     #### Partner Success
     'partner_success' => ' شركاء النجاح',
+    'partners' => ' شركائنا',
     'distrubtion' => 'التوزيع',
     'partner_head' => 'نقدم خدمات متميزة وفريدة',
 

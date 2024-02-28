@@ -18,17 +18,20 @@
         </div>
     </div>
 
-
     <div class="section-career gray-bg section-padding">
         <form class="careerForm" id="careerForm">
             @csrf
+            <input type="hidden" name="job" value="{{ $job->title_ar }}">
             <div class="container">
                 <div class="section-title text-center">
                     <img src="{{ asset('assets/front') }}/assets/img/career.png" style="width: 50px;">
                     <h6>{{ trans('site.join_us') }}</h6>
                     <h2 style="margin: 0; font-size: 40px;">{{ trans('site.we_wish') }}!</h2>
-                    <p>
-                    </p>
+                    <div class="d-flex justify-content-center">
+                        <p class="text-black-50" style="width: 80%;">
+                            {{ app()->getLocale() == 'ar' ? $job->description_ar : $job->description_en }}
+                        </p>
+                    </div>
                 </div>
 
                 <div class="d-flex justify-content-center align-items-center mt-5">
@@ -50,10 +53,6 @@
                                        placeholder=" {{ trans('site.age') }}" required>
                             </div>
                             <div class="col-md-6 col-sm-12 mb-4">
-                                <input type="text" class="w-100 p-3" name="job"
-                                       placeholder=" {{ trans('site.job') }}" required>
-                            </div>
-                            <div class="col-md-6 col-sm-12 mb-4">
                                 <input type="text" class="w-100 p-3" name="phone"
                                        placeholder=" {{ trans('site.phone') }}" required>
                             </div>
@@ -62,7 +61,8 @@
                                        placeholder=" {{ trans('site.salary') }}" required>
                             </div>
                             <div class="col-md-12 col-sm-12 mb-4">
-                                <textarea class="w-100 p-3" rows="10" placeholder=" {{ trans('site.desc') }}" name="desc"></textarea>
+                                <textarea class="w-100 p-3" rows="10" placeholder=" {{ trans('site.desc') }}"
+                                          name="desc"></textarea>
                             </div>
                             <div class="col-12 mt-2 d-flex justify-content-center">
                                 <button type="submit" class="main-btn primary mt-2" id="career-btn"
@@ -105,8 +105,8 @@
                         $('#contactForm input').val('');
                         $('#career-btn').prop('disabled', true);
                         setTimeout(function () {
-                            window.location.href = '{{ route('career') }}';
-                        },2000)
+                            window.location.href = '{{ route('careers') }}';
+                        }, 2000)
 
                     }
                 },
