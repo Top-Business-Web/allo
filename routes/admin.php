@@ -30,6 +30,9 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function () {
     #### Career ####
     Route::resource('careers', 'CareerController');
 
+    #### Career ####
+    Route::resource('jobs', 'JobController');
+
     #### Category ####
     Route::resource('categories', 'CategoryController');
 
