@@ -39,7 +39,7 @@
                             <div class="services-two_img-box">
                                 <div class="services-two_img">
                                 <a href="{{ route('singleService', $service->id) }}" class="w-100">
-                                    <img src="{{ asset($service->images[0]) }}" alt="">
+                                    <img src="{{ asset($service->images[0] ?? '') }}" alt="">
                                 </a>
                                 </div>
                                 <div class="services-two_icon">
