@@ -39,7 +39,7 @@ return [
     'contact' => 'تواصل',
     'faqs' => 'الاسئلة الشائعة',
     'get_a_quote' => 'تقديم طلب',
-    'we_are_top' => 'IECO هي شركة مصرية مسجلة بدأت في عام 2009 ',
+    'we_are_top' => 'IGCO هي شركة مصرية مسجلة بدأت في عام 2009 ',
     'recycling' => 'إعادة التدوير',
     'organization_to_create_best' => 'منظمة لخلق أفضل',
     'environment' => 'بيئة',
