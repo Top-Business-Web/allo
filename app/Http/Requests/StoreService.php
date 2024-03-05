@@ -31,6 +31,7 @@ class StoreService extends FormRequest
             'title_en' => 'required',
             'desc_ar' => 'required',
             'desc_en' => 'required',
+            'file' => 'required',
         ];
     }
 
@@ -41,6 +42,8 @@ class StoreService extends FormRequest
             'title_en.required' => 'العنوان بالانجليزي مطلوب',
             'desc_ar.required' => 'الوصف بالعربي مطلوب',
             'desc_en.required' => 'الوصف بالانجليزي مطلوب',
+            'file.required' => ' الملف الورقي مطلوب',
+            'image_logo.required' => '  اللوجو مطلوب',
         ];
     }
 }

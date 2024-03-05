@@ -51,7 +51,6 @@ class ServiceController extends Controller
                         </span>
                         ';
                 })
-
                 ->escapeColumns([])
                 ->make(true);
         } else {
