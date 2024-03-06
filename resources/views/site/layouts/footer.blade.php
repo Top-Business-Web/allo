@@ -60,8 +60,15 @@
                                     class="fas fa-envelope submitIcon"></i></button>
                         </form>
                         <p>{{ trans('site.Stay_tuned_for_our_latest_news') }}</p>
+                        <div class="">
                         <div class="header-btn">
                             <a href="{{ route('quote') }}" class="main-btn primary">{{ trans('site.get_a_quote') }}</a>
+                        </div>
+                        <div class="mt-4">
+                            <a href="{{ route('admin.login') }}" class="main-btn">
+                                {{ trans('site.dashboard') }}
+                            </a>
+                        </div>
                         </div>
                     </div>
                 </div>

@@ -200,6 +200,7 @@ return [
      'branch2'=>'265 Lyra Street, Waterkloofrif ,pretoria',
      'branch_third'=>'Kuwait',
      'branch3'=>'Floor Num:8,mariam Complex ,Makkah street,fahaheel Kuwait',
-     'tracktor_gallery'=>'Tracktor Gallery'
+     'tracktor_gallery'=>'Tracktor Gallery',
+     'dashboard'=>'Dashboard'
 
 ];
